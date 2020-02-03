@@ -2,6 +2,7 @@
 layout: default
 title: "Welcome to Thuleanx"
 ---
+#_includes/live2d.html
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
