@@ -42,6 +42,7 @@ int main() {
 				lsy = y;
 				num++;
 			}
+			while (lsy != -1 && num++<k) ask(lsy); // pad by lsy
 			int lsx = -1; num = 0;
 			for (int x = i*k; x < (i+1)*k; x++) if (pres[x]) {
 				pres[x] = !ask(x);
