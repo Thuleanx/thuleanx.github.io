@@ -1,0 +1,10 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Bentley and Friedman}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{GeoMST - Well Separated Pair Decomposition}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Dual Tree Boruvka Algorithm}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Implementation}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Challenges with Bentley Friedman}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Challenges with GeoMST}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Challenges with Dual Boruvka}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Result}{}% 9
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 10
