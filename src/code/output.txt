@@ -1,2 +1,22 @@
-0.24 0.12
-0.0648 0.0864
+a -oo oo
+b 10 oo
+c 20 oo
+s 30 oo
+d -oo 30
+e 15 30
+t 40 30
+g -oo 30
+h 15 30
+u 50 30
+y -oo 30
+j 30 oo
+k 30 oo
+l 35 oo
+v 35 oo
+m 30 35
+n 30 35
+o 30 35
+w 30 35
+z 30 20
+iamgroot 30 oo
+30
