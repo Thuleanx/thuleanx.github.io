@@ -21,13 +21,15 @@
 title: Thuleanx
 email: thuleanx@tutanota.com
 description: >- # this means to ignore newlines until "baseurl:"
-    Welcome to my site. I play games and do a bit of competitive programming. Mainly, I am on <a href="https://codeforces.com/profile/Thuleanx">codeforces</a> crying because I can't do div 1 problems. 
-show_downloads: true
+    Hi. I am An / Thuleanx. I am currently getting my Master's in Theoretical Computer Science at Brown. <br/>
+    I love turning programming into a tool for creative expression and interactive storytelling. I especially enjoy doing game jams, where I get to explore aspects of computer graphics, audio integration, and tools creation. <br/>
+    I'm looking for part-time opportunities on cool game projects. 
+show_downloads: false
 logo: docs/assets/img/profile.png
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: neuthalz
+github_username: thuleanx
 
 # Build settings
 theme: jekyll-theme-minimal
