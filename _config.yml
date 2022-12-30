@@ -21,8 +21,14 @@
 title: Thuleanx
 email: thuleanx@tutanota.com
 description: >- # this means to ignore newlines until "baseurl:"
-    Hi. I am An / Thuleanx. I am currently getting my Master's in Theoretical Computer Science at Brown. <br/>
-    I love turning programming into a tool for creative expression and interactive storytelling. I especially enjoy doing game jams, where I get to explore aspects of computer graphics, audio integration, and tools creation. <br/>
+    Hi. 
+    <br />
+    I am An / Thuleanx. 
+    <br />
+    I am currently getting my Master's in Theoretical Computer Science at Brown. 
+    <br />
+    I love turning programming into a tool for creative expression and interactive storytelling. I especially enjoy doing game jams, where I get to explore aspects of computer graphics, audio integration, and tools creation. 
+    <br />
     I'm looking for part-time opportunities on cool game projects. 
 show_downloads: false
 logo: docs/assets/img/profile.png
