@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Poiura"
+date:   2021-05-15 00:00:00 -0600
+author: thuleanx
+category: gamejam
+---
+
+Horror adventure game where you uncover the mysteries behind a rural town.
+
+Poiura was my entry to a 15 days narrative game jam with Dylan, a writer and audio designer. I was responsible for programming and art, and mainly focused on writing shaders, implementing particle effects, and integrating dialogue using Yarn Spinner.
+
+We wanted a horror game where the player is not running away helplessly. I gave the main character an inaccurate blunderbuss that reloads very slowly. Knockback, screenshake, and particle effects were added to emphasize the gun's impact.
+
+For the town and the dangerous red woods beyond it, I added lighting, particles, and a foliage shader to enhance the environment.
+
+To accommodate for transitioning between the roughly 20 scenes of the game, I created a scene handler system using Scriptable Objects, that grew into this graphical node-based mapper that allowed me to create rooms and transitions in an environment similar to the Unity Animator window.
+
+For the dialogue, I integrated Yarn Spinner to insert Dylan's script into the game. I used Yarn Spinner both as a dialogue tree and a programming language to trigger different world events and Unity Timelines.
