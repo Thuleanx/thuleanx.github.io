@@ -1,3 +1,0 @@
-Things that annoys me:
-
-Implementing maxflow 

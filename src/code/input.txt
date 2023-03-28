@@ -1,3 +1,0 @@
-18
-10 20 30 15 40 10 15 50 30 25 35 5 5 10 20 35 40 50
-iamgroot y z s t u v w x a b c d e f g h i j k l m n o p q r
