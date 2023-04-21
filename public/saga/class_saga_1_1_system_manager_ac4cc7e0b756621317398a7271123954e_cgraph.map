@@ -1,0 +1,4 @@
+<map id="Saga::SystemManager::addKeyboardEventSystem" name="Saga::SystemManager::addKeyboardEventSystem">
+<area shape="rect" id="node1" title="Add a System to respond to a keyboard input." alt="" coords="5,5,188,45"/>
+<area shape="rect" id="node2" href="$class_saga_1_1_event_map.html#ad355a268001dfafcac0f7e5a8db12891" title="Add a listener to a specific event." alt="" coords="236,13,428,38"/>
+</map>

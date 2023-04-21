@@ -13,6 +13,14 @@ const nextConfig = {
             },
         ]
     },
+    // async rewrites() {
+    //     return [
+    //         {
+    //             source: "/saga",
+    //             destination: "/saga/index.html"
+    //         },
+    //     ]
+    // },
 }
 
 module.exports = nextConfig

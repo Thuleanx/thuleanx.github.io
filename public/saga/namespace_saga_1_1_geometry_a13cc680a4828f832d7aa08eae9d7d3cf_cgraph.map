@@ -1,0 +1,7 @@
+<map id="Saga::Geometry::ellipsoidTriangleCollision" name="Saga::Geometry::ellipsoidTriangleCollision">
+<area shape="rect" id="node1" title="Find the intersection time t between a moving ellipsoid and a triangle." alt="" coords="5,69,177,109"/>
+<area shape="rect" id="node2" href="$namespace_saga_1_1_geometry.html#ac5e87ba16eedb1b7ab72abcbb786cadd" title="Find the intersection time t between a moving unit sphere with a triangle." alt="" coords="225,69,412,109"/>
+<area shape="rect" id="node3" href="$namespace_saga_1_1_geometry.html#a8d9c07911d3e9b3c2bf895db057a5988" title="Find the intersection time t where a ray and triangle intersects. Does not detect intersections to th..." alt="" coords="469,5,657,45"/>
+<area shape="rect" id="node4" href="$namespace_saga_1_1_geometry.html#aee5aa4d8e04ac839783a9687fc71e08d" title="Find the intersection time t between a unit sphere at the origin and a ray." alt="" coords="460,69,667,109"/>
+<area shape="rect" id="node5" href="$namespace_saga_1_1_geometry.html#a94bd8ac13ae3f877e60e27b02e3072a9" title=" " alt="" coords="470,133,657,173"/>
+</map>

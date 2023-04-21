@@ -1,0 +1,4 @@
+<map id="Saga::Core::update" name="Saga::Core::update">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,140,38"/>
+<area shape="rect" id="node2" href="$namespace_saga_1_1_audio_engine.html#aaed9d5fbe0b01662c403108e02002d9d" title="Update the Audio Engine. Needs to be run every frame for accurate result." alt="" coords="188,5,329,45"/>
+</map>

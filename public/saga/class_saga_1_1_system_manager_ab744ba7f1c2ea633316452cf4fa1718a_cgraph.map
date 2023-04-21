@@ -1,0 +1,4 @@
+<map id="Saga::SystemManager::addMouseEventSystem" name="Saga::SystemManager::addMouseEventSystem">
+<area shape="rect" id="node1" title="Add a System to respond to a mouse button inputs." alt="" coords="5,5,172,45"/>
+<area shape="rect" id="node2" href="$class_saga_1_1_event_map.html#ad355a268001dfafcac0f7e5a8db12891" title="Add a listener to a specific event." alt="" coords="220,13,412,38"/>
+</map>

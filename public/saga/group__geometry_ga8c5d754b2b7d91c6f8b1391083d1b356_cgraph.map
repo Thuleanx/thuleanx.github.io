@@ -1,0 +1,4 @@
+<map id="Saga::Geometry::getClosestPoint" name="Saga::Geometry::getClosestPoint">
+<area shape="rect" id="node1" title="Find the closest point between a point and a triangle." alt="" coords="5,5,192,45"/>
+<area shape="rect" id="node2" href="$struct_saga_1_1_geometry_1_1_triangle.html#afca2c293d75c1bcacc970f6a64fd69db" title="Convert a point from cartesian to barycentric coordinate with respect to the current triangle." alt="" coords="240,5,411,45"/>
+</map>

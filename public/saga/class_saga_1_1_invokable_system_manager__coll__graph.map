@@ -1,0 +1,5 @@
+<map id="Saga::InvokableSystemManager" name="Saga::InvokableSystemManager">
+<area shape="rect" id="node1" title="A SystemManager where stages and events can be invoked." alt="" coords="5,212,213,237"/>
+<area shape="rect" id="node2" href="$class_saga_1_1_system_manager.html" title="Manages Systems in the ECS model. Allows for System to be added, but not invoked." alt="" coords="32,137,187,163"/>
+<area shape="rect" id="node3" href="$class_saga_1_1_event_map.html" title="A mapping between events (which are ints under the hood) and callbacks." alt="" coords="51,5,168,31"/>
+</map>

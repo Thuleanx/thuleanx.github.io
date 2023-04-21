@@ -1,0 +1,4 @@
+<map id="Saga::SystemManager::removeStagedSystem" name="Saga::SystemManager::removeStagedSystem">
+<area shape="rect" id="node1" title="Remove a staged System." alt="" coords="5,5,163,45"/>
+<area shape="rect" id="node2" href="$class_saga_1_1_event_map.html#a4efba16960533d18037028b1c1e6a43c" title="Remove a listener from an event, by their id." alt="" coords="211,13,423,38"/>
+</map>

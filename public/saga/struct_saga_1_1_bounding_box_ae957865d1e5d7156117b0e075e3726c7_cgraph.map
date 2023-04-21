@@ -1,0 +1,6 @@
+<map id="Saga::BoundingBox::findCollisionWithBox" name="Saga::BoundingBox::findCollisionWithBox">
+<area shape="rect" id="node1" title="Find the collision between a moving bounding box and this one." alt="" coords="5,63,151,103"/>
+<area shape="rect" id="node2" href="$struct_saga_1_1_bounding_box.html#a875a511944b3844f8093ca86c0e9b02a" title="Compute the centroid of the BoundingBox." alt="" coords="233,5,379,45"/>
+<area shape="rect" id="node3" href="$group__geometry.html#ga6739ff26be4e029c7da07ca50b484da4" title="Find the intersection time t between a ray and a box." alt="" coords="199,70,413,95"/>
+<area shape="rect" id="node4" href="$struct_saga_1_1_bounding_box.html#aaf1c883c32f92466acf8c5aeebef3931" title="Compute the size of the BoundingBox." alt="" coords="221,119,391,145"/>
+</map>

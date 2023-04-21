@@ -1,0 +1,5 @@
+<map id="Saga::Geometry::detectAACylinderCylinderCollision" name="Saga::Geometry::detectAACylinderCylinderCollision">
+<area shape="rect" id="node1" title="Find the minimum translation vector for two axis&#45;aligned cylinders. If the two cylinders are not pene..." alt="" coords="5,37,232,77"/>
+<area shape="rect" id="node2" href="$group__geometry.html#gab58dd85efce384029a9a407b6aa9fc17" title="Detect if two circles overlap. If they do, output the minimum translation vector from the first circl..." alt="" coords="280,5,475,45"/>
+<area shape="rect" id="node3" href="$group__geometry.html#ga4d337345022f8f277015b55fbc856dee" title="Detect collision (and return minimum translation vector) of two line segments." alt="" coords="285,69,470,109"/>
+</map>

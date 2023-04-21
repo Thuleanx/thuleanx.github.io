@@ -1,0 +1,4 @@
+<map id="Saga::Systems::getClosestCollisionStatic" name="Saga::Systems::getClosestCollisionStatic">
+<area shape="rect" id="node1" title="Retrieve the closest static collision to a moving ellipsoid." alt="" coords="5,5,188,45"/>
+<area shape="rect" id="node2" href="$namespace_saga_1_1_systems.html#a1429465e363b09ef9436a79c8860bf2b" title="Retrieve the world&#39;s CollisionSystemData. This should live as a component on an entity...." alt="" coords="236,13,447,38"/>
+</map>

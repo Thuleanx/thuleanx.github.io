@@ -1,0 +1,4 @@
+<map id="Saga::BoundingVolumeHierarchy::BoundedShapeData::computeBound" name="Saga::BoundingVolumeHierarchy::BoundedShapeData::computeBound">
+<area shape="rect" id="node1" title="Recompute the bounding box of the triangle inside the data field. Call this function after assigning ..." alt="" coords="5,5,245,45"/>
+<area shape="rect" id="node2" href="$struct_saga_1_1_bounding_box.html#a3e047fb4c7d97823d7a19ef2cd15eaf8" title="Get a special invalid BoundingBox used as a starting point for mergeBox and confineBox...." alt="" coords="293,5,439,45"/>
+</map>

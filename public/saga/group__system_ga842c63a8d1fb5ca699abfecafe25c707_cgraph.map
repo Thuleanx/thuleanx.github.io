@@ -1,0 +1,5 @@
+<map id="Saga::Systems::audioCameraPositioning3D" name="Saga::Systems::audioCameraPositioning3D">
+<area shape="rect" id="node1" title="Adjust the audio listener. By default, this sets it to the first camera in the scene." alt="" coords="5,5,201,45"/>
+<area shape="rect" id="node2" href="$namespace_saga_1_1_audio_engine.html#aded196cf21e27042bcda5b574961a577" title="Set the 3D position of the listener." alt="" coords="249,5,391,45"/>
+<area shape="rect" id="node3" href="$namespace_saga_1_1_audio_engine.html#a3ab04d36330876e1526ac4fa0dc7492d" title="Convert a glm vector to an fmod vector." alt="" coords="439,5,580,45"/>
+</map>

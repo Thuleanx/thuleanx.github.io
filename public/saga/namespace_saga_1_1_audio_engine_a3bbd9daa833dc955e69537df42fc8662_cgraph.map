@@ -1,0 +1,4 @@
+<map id="Saga::AudioEngine::set3DAttributes" name="Saga::AudioEngine::set3DAttributes">
+<area shape="rect" id="node1" title="Set the 3D attributes of an audio event instance." alt="" coords="5,5,147,45"/>
+<area shape="rect" id="node2" href="$namespace_saga_1_1_audio_engine.html#a3ab04d36330876e1526ac4fa0dc7492d" title="Convert a glm vector to an fmod vector." alt="" coords="195,5,336,45"/>
+</map>

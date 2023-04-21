@@ -1,0 +1,7 @@
+<map id="Saga::Geometry::movingEllipsoidEllipsoidIntersection" name="Saga::Geometry::movingEllipsoidEllipsoidIntersection">
+<area shape="rect" id="node1" title="Find the intersection between two moving axis&#45;aligned ellipsoids." alt="" coords="5,5,220,45"/>
+<area shape="rect" id="node2" href="$namespace_saga_1_1_geometry.html#a57eb07349b7340fdf10a3c5e8bd1f31d" title="Find the intersection time t between a ray and an axis&#45;aligned ellipsoid." alt="" coords="268,5,460,45"/>
+<area shape="rect" id="node3" href="$namespace_saga_1_1_geometry.html#a69affaa563ef36bb7d5a5285e72926a7" title="Find the intersection time t between a unit sphere at the origin and a ray." alt="" coords="508,5,715,45"/>
+<area shape="rect" id="node4" href="$namespace_saga_1_1_math.html#a382b164c8a74d95c80949817117d9c19" title="Solve for the minimum t such that quadratic equation at^2 + bt + c = 0 is satisfied." alt="" coords="763,5,933,45"/>
+<area shape="rect" id="node5" href="$namespace_saga_1_1_math.html#a23dd964782912ea9ada9364c66140d90" title=" " alt="" coords="981,5,1164,45"/>
+</map>

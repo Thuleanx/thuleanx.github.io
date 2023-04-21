@@ -1,0 +1,4 @@
+<map id="Saga::Material::Material" name="Saga::Material::Material">
+<area shape="rect" id="node1" title="Constructor for setting TEXTURE_COLOR based material." alt="" coords="5,13,165,38"/>
+<area shape="rect" id="node2" href="$struct_saga_1_1_material.html#a07d269cfddaa31e80c9b3212b3872592" title="Used for assigning new material name in the graphics engine." alt="" coords="213,5,337,45"/>
+</map>

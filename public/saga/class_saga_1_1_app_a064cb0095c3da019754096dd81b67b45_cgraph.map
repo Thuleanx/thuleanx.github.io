@@ -1,0 +1,4 @@
+<map id="Saga::App::createGameWorld" name="Saga::App::createGameWorld">
+<area shape="rect" id="node1" title="Create a Game World object." alt="" coords="5,13,201,38"/>
+<area shape="rect" id="node2" href="$namespace_saga_1_1_physics.html#a137feea8d95d69912525a3e7e09d7e7a" title="Register all Groups that the Physics meta system use." alt="" coords="249,5,455,45"/>
+</map>

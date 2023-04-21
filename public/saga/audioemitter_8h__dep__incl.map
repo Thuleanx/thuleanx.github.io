@@ -1,0 +1,11 @@
+<map id="Components/audioemitter.h" name="Components/audioemitter.h">
+<area shape="rect" id="node1" title=" " alt="" coords="329,5,510,31"/>
+<area shape="rect" id="node2" href="$_components_2__import_8h.html" title=" " alt="" coords="144,79,297,104"/>
+<area shape="rect" id="node8" href="$audioemitter_8cpp.html" title=" " alt="" coords="322,79,517,104"/>
+<area shape="rect" id="node9" href="$audio_system_8cpp.html" title=" " alt="" coords="541,79,719,104"/>
+<area shape="rect" id="node3" href="$physics_8cpp.html" title=" " alt="" coords="5,152,183,177"/>
+<area shape="rect" id="node4" href="$collision_system_8cpp.html" title=" " alt="" coords="157,299,351,324"/>
+<area shape="rect" id="node5" href="$saga_8h.html" title=" " alt="" coords="318,152,379,177"/>
+<area shape="rect" id="node6" href="$collision_system_8h.html" title=" " alt="" coords="258,225,439,251"/>
+<area shape="rect" id="node7" href="$_systems_2__import_8h.html" title=" " alt="" coords="393,299,525,324"/>
+</map>

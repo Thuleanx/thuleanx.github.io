@@ -1,0 +1,4 @@
+<map id="Saga::BoundingBox::findCollisionWithRay" name="Saga::BoundingBox::findCollisionWithRay">
+<area shape="rect" id="node1" title="Find the point of collision between a ray and the BoundingBox." alt="" coords="5,5,151,45"/>
+<area shape="rect" id="node2" href="$group__geometry.html#ga6739ff26be4e029c7da07ca50b484da4" title="Find the intersection time t between a ray and a box." alt="" coords="199,13,413,38"/>
+</map>

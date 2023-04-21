@@ -1,0 +1,4 @@
+<map id="Saga::SystemManager::addStagedSystem" name="Saga::SystemManager::addStagedSystem">
+<area shape="rect" id="node1" title="Add a staged System to the list of systems." alt="" coords="5,5,160,45"/>
+<area shape="rect" id="node2" href="$class_saga_1_1_event_map.html#ad355a268001dfafcac0f7e5a8db12891" title="Add a listener to a specific event." alt="" coords="208,13,400,38"/>
+</map>

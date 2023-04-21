@@ -1,0 +1,3 @@
+<map id="Saga::Systems::collisionSystem" name="Saga::Systems::collisionSystem">
+<area shape="rect" id="node1" title="First handle cylinder&#45;cylinder collision. Then handle all triangle&#45;ellipsoid collisions." alt="" coords="5,29,172,69"/>
+</map>

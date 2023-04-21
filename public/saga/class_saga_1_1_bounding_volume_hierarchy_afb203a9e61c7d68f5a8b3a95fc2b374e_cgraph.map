@@ -1,0 +1,3 @@
+<map id="Saga::BoundingVolumeHierarchy::traceEllipsoid" name="Saga::BoundingVolumeHierarchy::traceEllipsoid">
+<area shape="rect" id="node1" title="Trace an ellipsoid through the Bounding Volume Hierarchy, reporting the first intersection if it exis..." alt="" coords="5,29,219,69"/>
+</map>

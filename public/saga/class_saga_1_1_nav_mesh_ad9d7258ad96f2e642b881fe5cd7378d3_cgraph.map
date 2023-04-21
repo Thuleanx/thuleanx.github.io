@@ -1,0 +1,5 @@
+<map id="Saga::NavMesh::getCell" name="Saga::NavMesh::getCell">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,167,38"/>
+<area shape="rect" id="node2" href="$group__geometry.html#ga8c5d754b2b7d91c6f8b1391083d1b356" title="Find the closest point between a point and a triangle." alt="" coords="215,5,401,45"/>
+<area shape="rect" id="node3" href="$struct_saga_1_1_geometry_1_1_triangle.html#afca2c293d75c1bcacc970f6a64fd69db" title="Convert a point from cartesian to barycentric coordinate with respect to the current triangle." alt="" coords="449,5,620,45"/>
+</map>

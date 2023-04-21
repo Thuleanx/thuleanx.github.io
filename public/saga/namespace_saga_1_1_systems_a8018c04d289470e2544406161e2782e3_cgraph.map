@@ -1,0 +1,11 @@
+<map id="Saga::Systems::getClosestCollision" name="Saga::Systems::getClosestCollision">
+<area shape="rect" id="node1" title="Retrieve the closest collision to a moving object." alt="" coords="5,37,188,77"/>
+<area shape="rect" id="node2" href="$namespace_saga_1_1_systems.html#ae8961e98e237ccb3aa0e1cfa40f516b8" title="Retrieve the closest dynamic collision to a cylinder." alt="" coords="236,69,419,109"/>
+<area shape="rect" id="node9" href="$namespace_saga_1_1_systems.html#aa1d589b2da8f48241f8971ccb3abed41" title="Retrieve the closest static collision to a moving ellipsoid." alt="" coords="236,5,419,45"/>
+<area shape="rect" id="node3" href="$namespace_saga_1_1_systems.html#a1429465e363b09ef9436a79c8860bf2b" title="Retrieve the world&#39;s CollisionSystemData. This should live as a component on an entity...." alt="" coords="467,17,678,42"/>
+<area shape="rect" id="node4" href="$group__geometry.html#gadb7c9ade924b2d0de42ff88c2964ba70" title="Find the earliest time between intersection of two cylinders, one of which is moving...." alt="" coords="467,69,679,109"/>
+<area shape="rect" id="node5" href="$group__geometry.html#gab58dd85efce384029a9a407b6aa9fc17" title="Detect if two circles overlap. If they do, output the minimum translation vector from the first circl..." alt="" coords="729,5,923,45"/>
+<area shape="rect" id="node6" href="$group__geometry.html#ga4d337345022f8f277015b55fbc856dee" title="Detect collision (and return minimum translation vector) of two line segments." alt="" coords="733,69,919,109"/>
+<area shape="rect" id="node7" href="$group__geometry.html#gabac6c7cf9057544443876d8c9f5b4706" title="Find the entrance and exit times t between a unit circle at the origin and a ray." alt="" coords="727,133,925,173"/>
+<area shape="rect" id="node8" href="$namespace_saga_1_1_math.html#a23dd964782912ea9ada9364c66140d90" title=" " alt="" coords="973,133,1156,173"/>
+</map>

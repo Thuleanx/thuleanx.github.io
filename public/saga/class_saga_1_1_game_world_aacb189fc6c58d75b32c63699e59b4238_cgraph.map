@@ -1,0 +1,4 @@
+<map id="Saga::GameWorld::deliverEvent" name="Saga::GameWorld::deliverEvent">
+<area shape="rect" id="node1" title="Deliver an event to a specific object. Only System that registers to that specific object will be cal..." alt="" coords="5,5,179,45"/>
+<area shape="rect" id="node2" href="$class_saga_1_1_invokable_system_manager.html#aaa7df4b3db5fd8a086e4815ac6cafb09" title="Deliver an event to an entity. Any system attached to that entity with this event will receive this d..." alt="" coords="227,5,435,45"/>
+</map>

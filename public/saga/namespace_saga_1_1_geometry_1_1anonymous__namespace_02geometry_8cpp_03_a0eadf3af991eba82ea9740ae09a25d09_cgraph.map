@@ -1,0 +1,5 @@
+<map id="Saga::Geometry::anonymous_namespace{geometry::cpp}::unitSphereEdgeCollision" name="Saga::Geometry::anonymous_namespace{geometry::cpp}::unitSphereEdgeCollision">
+<area shape="rect" id="node1" title="Find collision between a moving unit sphere and an edge (line segment) in 3D." alt="" coords="5,29,197,84"/>
+<area shape="rect" id="node2" href="$namespace_saga_1_1_math.html#a382b164c8a74d95c80949817117d9c19" title="Solve for the minimum t such that quadratic equation at^2 + bt + c = 0 is satisfied." alt="" coords="245,37,416,77"/>
+<area shape="rect" id="node3" href="$namespace_saga_1_1_math.html#a23dd964782912ea9ada9364c66140d90" title=" " alt="" coords="464,37,647,77"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Saga::IComponentGroup" name="Saga::IComponentGroup">
+<area shape="rect" id="node1" title="Generic group of components." alt="" coords="5,5,169,31"/>
+<area shape="rect" id="node2" href="$class_saga_1_1_component_group.html" title="Effectively a list of tuples each entry containing an Entity and ComponentReference to each of the co..." alt="" coords="7,79,168,119"/>
+</map>

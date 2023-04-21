@@ -1,0 +1,4 @@
+<map id="Saga::AudioEngine::loadSampleData" name="Saga::AudioEngine::loadSampleData">
+<area shape="rect" id="node1" title="Load an event&#39;s sample data, allowing for event instances to be spawned and play instantaneously...." alt="" coords="5,5,147,45"/>
+<area shape="rect" id="node2" href="$namespace_saga_1_1_audio_engine.html#a30a6e734a08463e9ae9a521433daaf5a" title="Load an event from a loaded bank." alt="" coords="195,5,336,45"/>
+</map>

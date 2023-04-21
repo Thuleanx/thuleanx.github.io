@@ -1,0 +1,4 @@
+<map id="Saga::Geometry::rayEllipsoidOriginIntersection" name="Saga::Geometry::rayEllipsoidOriginIntersection">
+<area shape="rect" id="node1" title="Find the intersection time t between a ray and an axis&#45;aligned ellipsoid." alt="" coords="5,5,197,45"/>
+<area shape="rect" id="node2" href="$namespace_saga_1_1_geometry.html#aee5aa4d8e04ac839783a9687fc71e08d" title="Find the intersection time t between a unit sphere at the origin and a ray." alt="" coords="245,5,452,45"/>
+</map>

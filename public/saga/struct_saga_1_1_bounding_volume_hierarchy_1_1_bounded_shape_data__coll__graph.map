@@ -1,0 +1,5 @@
+<map id="Saga::BoundingVolumeHierarchy::BoundedShapeData" name="Saga::BoundingVolumeHierarchy::BoundedShapeData">
+<area shape="rect" id="node1" title="Data on a bounded triangle, which includes the triangle itself and its BoundingBox." alt="" coords="67,108,281,148"/>
+<area shape="rect" id="node2" href="$struct_saga_1_1_bounding_box.html" title="Represents a bounding box." alt="" coords="5,13,143,38"/>
+<area shape="rect" id="node3" href="$struct_saga_1_1_bounding_volume_hierarchy_1_1_triangle_data.html" title="Data on a single triangles in the structure." alt="" coords="167,5,381,45"/>
+</map>

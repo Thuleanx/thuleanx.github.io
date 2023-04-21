@@ -1,0 +1,4 @@
+<map id="Saga::Physics::RaycastHit" name="Saga::Physics::RaycastHit">
+<area shape="rect" id="node1" title=" " alt="" coords="5,93,184,119"/>
+<area shape="rect" id="node2" href="$struct_saga_1_1_collider.html" title="A boolean flag to tell if an Entity has a Collider." alt="" coords="43,5,146,31"/>
+</map>

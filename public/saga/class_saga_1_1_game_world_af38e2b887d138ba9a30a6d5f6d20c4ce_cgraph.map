@@ -1,0 +1,4 @@
+<map id="Saga::GameWorld::registerGroup" name="Saga::GameWorld::registerGroup">
+<area shape="rect" id="node1" title="Register a ComponentGroup." alt="" coords="5,5,185,45"/>
+<area shape="rect" id="node2" href="$class_saga_1_1_game_world.html#aef544e939d10572e53276788bb124130" title="Create a signature from a list of component types." alt="" coords="233,13,461,38"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Saga::NavMesh::findPath" name="Saga::NavMesh::findPath">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,173,38"/>
+<area shape="rect" id="node2" href="$class_saga_1_1_nav_mesh.html#ad9d7258ad96f2e642b881fe5cd7378d3" title=" " alt="" coords="221,13,383,38"/>
+<area shape="rect" id="node3" href="$group__geometry.html#ga8c5d754b2b7d91c6f8b1391083d1b356" title="Find the closest point between a point and a triangle." alt="" coords="431,5,617,45"/>
+<area shape="rect" id="node4" href="$struct_saga_1_1_geometry_1_1_triangle.html#afca2c293d75c1bcacc970f6a64fd69db" title="Convert a point from cartesian to barycentric coordinate with respect to the current triangle." alt="" coords="665,5,836,45"/>
+</map>

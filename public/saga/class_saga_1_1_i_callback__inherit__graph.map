@@ -1,0 +1,4 @@
+<map id="Saga::ICallback" name="Saga::ICallback">
+<area shape="rect" id="node1" title="Generic callback used for events." alt="" coords="43,5,157,31"/>
+<area shape="rect" id="node2" href="$class_saga_1_1_callback.html" title="A wrapper around a shared_ptr to a function." alt="" coords="5,79,195,104"/>
+</map>

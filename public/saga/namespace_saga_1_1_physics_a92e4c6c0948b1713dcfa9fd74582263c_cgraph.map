@@ -1,0 +1,6 @@
+<map id="Saga::Physics::overlapCylinder" name="Saga::Physics::overlapCylinder">
+<area shape="rect" id="node1" title="Determine if a cylinder overlaps with another cylinder in the world." alt="" coords="5,45,208,70"/>
+<area shape="rect" id="node2" href="$group__geometry.html#ga9b2d54006e1ffc9fe0fbc9d51d5a6420" title="Find the minimum translation vector for two axis&#45;aligned cylinders. If the two cylinders are not pene..." alt="" coords="256,37,483,77"/>
+<area shape="rect" id="node3" href="$group__geometry.html#gab58dd85efce384029a9a407b6aa9fc17" title="Detect if two circles overlap. If they do, output the minimum translation vector from the first circl..." alt="" coords="531,5,725,45"/>
+<area shape="rect" id="node4" href="$group__geometry.html#ga4d337345022f8f277015b55fbc856dee" title="Detect collision (and return minimum translation vector) of two line segments." alt="" coords="535,69,721,109"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Saga::GameWorld" name="Saga::GameWorld">
+<area shape="rect" id="node1" title="Maintains a game world, where Entity, Component, Systems, and MetaSystems can be added,..." alt="" coords="49,315,179,340"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,212,180,252"/>
+<area shape="rect" id="node3" href="$class_saga_1_1_invokable_system_manager.html" title="A SystemManager where stages and events can be invoked." alt="" coords="205,219,413,245"/>
+<area shape="rect" id="node4" href="$class_saga_1_1_system_manager.html" title="Manages Systems in the ECS model. Allows for System to be added, but not invoked." alt="" coords="231,137,386,163"/>
+<area shape="rect" id="node5" href="$class_saga_1_1_event_map.html" title="A mapping between events (which are ints under the hood) and callbacks." alt="" coords="250,5,367,31"/>
+</map>

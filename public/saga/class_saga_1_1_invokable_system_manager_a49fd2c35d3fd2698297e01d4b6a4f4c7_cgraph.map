@@ -1,0 +1,4 @@
+<map id="Saga::InvokableSystemManager::runStageDraw" name="Saga::InvokableSystemManager::runStageDraw">
+<area shape="rect" id="node1" title="Invoke the Draw stage." alt="" coords="5,5,213,45"/>
+<area shape="rect" id="node2" href="$class_saga_1_1_event_map.html#a90d66948cc6b0fc75573f6a9b5a62c84" title="Invoke an event. This calls all listeners attached to that event, with the specified parameters." alt="" coords="261,13,423,38"/>
+</map>
