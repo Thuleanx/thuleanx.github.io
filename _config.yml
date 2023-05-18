@@ -18,6 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+markdown: kramdown
+
 title: Thuleanx
 name: Thuleanx
 email: thuleanx@tutanota.com
@@ -34,6 +36,10 @@ remote_theme: mmistakes/minimal-mistakes@4.24.0
 minimal_mistakes_skin: "neon"
 plugins:
   - jekyll-include-cache
+  - jekyll-archives
+
+include: ["_pages"]
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -58,7 +64,26 @@ plugins:
 atom_feed:
   hide: true
 search: true
+breadcrumbs: true
+timezone: America/New_York
 
+author:
+  name     : "Thuleanx"
+  avatar   : "/assets/images/logo.jpg"
+  bio      : "My awesome biography constrained to a sentence or two goes here."
+  location : "Somewhere, USA"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mmistakes"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mmistakes"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/mmistakes"
 
 defaults:
   # _posts
@@ -66,5 +91,37 @@ defaults:
       path: ""
       type: posts
     values:
+      layout: single
       show_date: true
       date_format: "%Y-%m-%d"
+  # _games
+  - scope:
+      path: ""
+      type: games
+    values:
+      layout: single
+      author_profile: false
+      classes: wide
+  # _graphics
+  - scope:
+      path: ""
+      type: graphics
+    values:
+      layout: single
+      author_profile: false
+      classes: wide
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+collections:
+  games:
+    output: true
+    permalink: /:collection/:path/
+  graphics:
+    output: true
+    permalink: /:collection/:path/
