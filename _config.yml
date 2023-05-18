@@ -59,11 +59,12 @@ atom_feed:
   hide: true
 search: true
 
+
 defaults:
   # _posts
   - scope:
-    path: ""
-    type: posts
-  values:
-    show_date: true,
-    date_format: "%Y-%m-%d"
+      path: ""
+      type: posts
+    values:
+      show_date: true
+      date_format: "%Y-%m-%d"
