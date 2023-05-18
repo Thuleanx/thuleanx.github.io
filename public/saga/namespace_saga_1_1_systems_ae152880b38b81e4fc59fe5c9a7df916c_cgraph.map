@@ -1,4 +1,0 @@
-<map id="Saga::Systems::rebuildStaticBVH" name="Saga::Systems::rebuildStaticBVH">
-<area shape="rect" id="node1" title="This builds the bounding volume hierarchy for all static meshes in the scene, and stores it inside of..." alt="" coords="5,5,224,31"/>
-<area shape="rect" id="node2" href="$namespace_saga_1_1_systems.html#a1429465e363b09ef9436a79c8860bf2b" title="Retrieve the world&#39;s CollisionSystemData. This should live as a component on an entity...." alt="" coords="272,5,483,31"/>
-</map>

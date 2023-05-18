@@ -1,5 +1,0 @@
-<map id="Saga::Systems::audioEmitterUpdate" name="Saga::Systems::audioEmitterUpdate">
-<area shape="rect" id="node1" title="Perform updates to audio emitters in the scene. Specifically, if the emitter is playing a sound and i..." alt="" coords="5,5,199,45"/>
-<area shape="rect" id="node2" href="$namespace_saga_1_1_audio_engine.html#a3bbd9daa833dc955e69537df42fc8662" title="Set the 3D attributes of an audio event instance." alt="" coords="247,5,388,45"/>
-<area shape="rect" id="node3" href="$namespace_saga_1_1_audio_engine.html#a3ab04d36330876e1526ac4fa0dc7492d" title="Convert a glm vector to an fmod vector." alt="" coords="436,5,577,45"/>
-</map>

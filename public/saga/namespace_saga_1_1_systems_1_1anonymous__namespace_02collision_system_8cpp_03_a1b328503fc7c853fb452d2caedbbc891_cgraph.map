@@ -1,6 +1,0 @@
-<map id="Saga::Systems::anonymous_namespace{collisionSystem::cpp}::detectCollision" name="Saga::Systems::anonymous_namespace{collisionSystem::cpp}::detectCollision">
-<area shape="rect" id="node1" title="Detect collision between two axis&#45;aligned cylinder colliders, and return the mtv such that if the fir..." alt="" coords="5,30,197,85"/>
-<area shape="rect" id="node2" href="$group__geometry.html#ga9b2d54006e1ffc9fe0fbc9d51d5a6420" title="Find the minimum translation vector for two axis&#45;aligned cylinders. If the two cylinders are not pene..." alt="" coords="245,37,472,77"/>
-<area shape="rect" id="node3" href="$group__geometry.html#gab58dd85efce384029a9a407b6aa9fc17" title="Detect if two circles overlap. If they do, output the minimum translation vector from the first circl..." alt="" coords="520,5,715,45"/>
-<area shape="rect" id="node4" href="$group__geometry.html#ga4d337345022f8f277015b55fbc856dee" title="Detect collision (and return minimum translation vector) of two line segments." alt="" coords="525,69,710,109"/>
-</map>

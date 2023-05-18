@@ -1,4 +1,0 @@
-<map id="Saga::TypeMap::hasKey" name="Saga::TypeMap::hasKey">
-<area shape="rect" id="node1" title="Determine if the map already maps a type to some value." alt="" coords="5,5,171,31"/>
-<area shape="rect" id="node2" href="$class_saga_1_1_type_map.html#a14ededdb15a06c22c690286d2ce46135" title="Return a const iterator to the end of this typemap." alt="" coords="219,5,361,31"/>
-</map>

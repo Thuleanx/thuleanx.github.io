@@ -1,4 +1,0 @@
-<map id="Saga::SystemManager::removeMouseEventSystem" name="Saga::SystemManager::removeMouseEventSystem">
-<area shape="rect" id="node1" title="Remove a System from responding to mouse button inputs." alt="" coords="5,5,192,45"/>
-<area shape="rect" id="node2" href="$class_saga_1_1_event_map.html#a4efba16960533d18037028b1c1e6a43c" title="Remove a listener from an event, by their id." alt="" coords="240,13,452,38"/>
-</map>

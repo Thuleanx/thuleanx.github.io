@@ -1,8 +1,0 @@
-<map id="Saga::Systems::collisionSystem_startup" name="Saga::Systems::collisionSystem_startup">
-<area shape="rect" id="node1" title="Builds the bounding volume hierarchy of the scene&#39;s static triangles. Used for ellipsoid&#45;triangle col..." alt="" coords="5,23,172,63"/>
-<area shape="rect" id="node2" href="$namespace_saga_1_1_systems.html#ae152880b38b81e4fc59fe5c9a7df916c" title="This builds the bounding volume hierarchy for all static meshes in the scene, and stores it inside of..." alt="" coords="224,5,443,31"/>
-<area shape="rect" id="node4" href="$namespace_saga_1_1_systems.html#aeaa47be7ed52cc3a8be0d0a684995b00" title="Build a world&#39;s uniform grid from all objects with cylinder colliders." alt="" coords="220,55,447,80"/>
-<area shape="rect" id="node3" href="$namespace_saga_1_1_systems.html#a1429465e363b09ef9436a79c8860bf2b" title="Retrieve the world&#39;s CollisionSystemData. This should live as a component on an entity...." alt="" coords="501,5,711,31"/>
-<area shape="rect" id="node5" href="$namespace_saga_1_1_systems.html#a6c6b1b07e3467036aa1323089451f278" title="Add an entity to the uniform grid. Here, the entity must contain a cylinder collider and transform,..." alt="" coords="495,55,717,80"/>
-<area shape="rect" id="node6" href="$struct_saga_1_1_transform.html#a887f784dc39c0691b5b1e37581ef43e2" title=" " alt="" coords="765,55,932,80"/>
-</map>

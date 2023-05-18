@@ -1,4 +1,0 @@
-<map id="Saga::SystemManager::removeWindowResizeSystem" name="Saga::SystemManager::removeWindowResizeSystem">
-<area shape="rect" id="node1" title="Remove a resize System." alt="" coords="5,5,208,45"/>
-<area shape="rect" id="node2" href="$class_saga_1_1_event_map.html#a4efba16960533d18037028b1c1e6a43c" title="Remove a listener from an event, by their id." alt="" coords="256,13,468,38"/>
-</map>

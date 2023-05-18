@@ -1,4 +1,0 @@
-<map id="Saga::SystemManager::removeScrollSystem" name="Saga::SystemManager::removeScrollSystem">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,160,45"/>
-<area shape="rect" id="node2" href="$class_saga_1_1_event_map.html#a4efba16960533d18037028b1c1e6a43c" title="Remove a listener from an event, by their id." alt="" coords="208,13,420,38"/>
-</map>

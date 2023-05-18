@@ -1,4 +1,0 @@
-<map id="Saga::SystemManager::addMousePosSystem" name="Saga::SystemManager::addMousePosSystem">
-<area shape="rect" id="node1" title="Add a System to receive mouse position." alt="" coords="5,5,164,45"/>
-<area shape="rect" id="node2" href="$class_saga_1_1_event_map.html#ad355a268001dfafcac0f7e5a8db12891" title="Add a listener to a specific event." alt="" coords="212,13,404,38"/>
-</map>

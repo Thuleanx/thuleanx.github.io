@@ -1,5 +1,0 @@
-<map id="Saga::AudioEngine::playEvent" name="Saga::AudioEngine::playEvent">
-<area shape="rect" id="node1" title="Play an event. If this event is not loaded, loadEvent will be called." alt="" coords="5,29,147,69"/>
-<area shape="rect" id="node2" href="$namespace_saga_1_1_audio_engine.html#a907f71be6059a08f5c5ac44363ffe851" title="Create an instance of a sound event. If this event has not been loaded, loadEvent will be called." alt="" coords="195,29,336,69"/>
-<area shape="rect" id="node3" href="$namespace_saga_1_1_audio_engine.html#a30a6e734a08463e9ae9a521433daaf5a" title="Load an event from a loaded bank." alt="" coords="384,29,525,69"/>
-</map>

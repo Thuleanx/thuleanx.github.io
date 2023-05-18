@@ -1,4 +1,0 @@
-<map id="Saga::reportAssertionFailed" name="Saga::reportAssertionFailed">
-<area shape="rect" id="node1" title="Output a message signaling that an assertion has failed. This message is of the form: Assertion Failu..." alt="" coords="5,5,188,31"/>
-<area shape="rect" id="node2" href="$namespace_saga.html#a4b119228d3cb6f856da64a785a70dd1e" title="Shut down the logger, and flush any buffered output." alt="" coords="236,5,392,31"/>
-</map>

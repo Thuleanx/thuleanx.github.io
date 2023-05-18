@@ -1,4 +1,0 @@
-<map id="Saga::SystemManager" name="Saga::SystemManager">
-<area shape="rect" id="node1" title="Manages Systems in the ECS model. Allows for System to be added, but not invoked." alt="" coords="5,137,160,163"/>
-<area shape="rect" id="node2" href="$class_saga_1_1_event_map.html" title="A mapping between events (which are ints under the hood) and callbacks." alt="" coords="24,5,141,31"/>
-</map>

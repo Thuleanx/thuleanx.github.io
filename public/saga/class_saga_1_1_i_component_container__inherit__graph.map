@@ -1,4 +1,0 @@
-<map id="Saga::IComponentContainer" name="Saga::IComponentContainer">
-<area shape="rect" id="node1" title="Generic container of components." alt="" coords="5,5,189,31"/>
-<area shape="rect" id="node2" href="$class_saga_1_1_component_container.html" title="Container for a specific Component type." alt="" coords="7,79,188,119"/>
-</map>

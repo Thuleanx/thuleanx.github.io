@@ -1,7 +1,0 @@
-<map id="Saga::Systems::audioEmitterAwake" name="Saga::Systems::audioEmitterAwake">
-<area shape="rect" id="node1" title="Preprocess all audio event emitters. This loads their events&#39;s sample data if requested,..." alt="" coords="5,41,199,81"/>
-<area shape="rect" id="node2" href="$namespace_saga_1_1_audio_engine.html#a0b5c4396f51d64167aa03e473436c9e4" title="Load an event&#39;s sample data, allowing for event instances to be spawned and play instantaneously...." alt="" coords="436,5,577,45"/>
-<area shape="rect" id="node4" href="$namespace_saga_1_1_audio_engine.html#a3e497d8672f472512b6f0db36064a55c" title="Play an event. If this event is not loaded, loadEvent will be called." alt="" coords="247,81,388,121"/>
-<area shape="rect" id="node3" href="$namespace_saga_1_1_audio_engine.html#a30a6e734a08463e9ae9a521433daaf5a" title="Load an event from a loaded bank." alt="" coords="625,5,767,45"/>
-<area shape="rect" id="node5" href="$namespace_saga_1_1_audio_engine.html#ab813be6ae275cfbfdfac7f140854eaa5" title="Create an instance of a sound event. If this event has not been loaded, loadEvent will be called." alt="" coords="436,73,577,113"/>
-</map>

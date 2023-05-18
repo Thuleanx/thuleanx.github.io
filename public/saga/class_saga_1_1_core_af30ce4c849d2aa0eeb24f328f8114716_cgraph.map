@@ -1,4 +1,0 @@
-<map id="Saga::Core::Core" name="Saga::Core::Core">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,128,31"/>
-<area shape="rect" id="node2" href="$namespace_saga_1_1_audio_engine.html#ad05a7da641ba0a79d549c3652d1d7d31" title="Initialize the Audio Engine. Must be called before any other audio operation." alt="" coords="176,5,335,31"/>
-</map>

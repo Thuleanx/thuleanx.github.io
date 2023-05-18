@@ -1,8 +1,0 @@
-<map id="Saga::Systems::anonymous_namespace{collisionSystem::cpp}::ellipsoidTriangleCollisions" name="Saga::Systems::anonymous_namespace{collisionSystem::cpp}::ellipsoidTriangleCollisions">
-<area shape="rect" id="node1" title="Handle collisions between a moving ellipsoid and triangles in the scene. By default,..." alt="" coords="5,62,216,117"/>
-<area shape="rect" id="node2" href="$namespace_saga_1_1_geometry.html#a13cc680a4828f832d7aa08eae9d7d3cf" title="Find the intersection time t between a moving ellipsoid and a triangle." alt="" coords="264,69,436,109"/>
-<area shape="rect" id="node3" href="$namespace_saga_1_1_geometry.html#ac5e87ba16eedb1b7ab72abcbb786cadd" title="Find the intersection time t between a moving unit sphere with a triangle." alt="" coords="484,69,671,109"/>
-<area shape="rect" id="node4" href="$namespace_saga_1_1_geometry.html#a8d9c07911d3e9b3c2bf895db057a5988" title="Find the intersection time t where a ray and triangle intersects. Does not detect intersections to th..." alt="" coords="728,5,916,45"/>
-<area shape="rect" id="node5" href="$namespace_saga_1_1_geometry.html#aee5aa4d8e04ac839783a9687fc71e08d" title="Find the intersection time t between a unit sphere at the origin and a ray." alt="" coords="719,69,925,109"/>
-<area shape="rect" id="node6" href="$namespace_saga_1_1_geometry.html#a94bd8ac13ae3f877e60e27b02e3072a9" title=" " alt="" coords="729,133,915,173"/>
-</map>

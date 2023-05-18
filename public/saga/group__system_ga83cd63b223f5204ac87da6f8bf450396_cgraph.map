@@ -1,6 +1,0 @@
-<map id="Saga::Systems::audioEmitterUnload" name="Saga::Systems::audioEmitterUnload">
-<area shape="rect" id="node1" title="Perform cleanup on the event emitters. Specifically, this stops and release event instances,..." alt="" coords="5,69,199,109"/>
-<area shape="rect" id="node2" href="$namespace_saga_1_1_audio_engine.html#afc8c21c9e54c9d1eee1b9f9b4d88235f" title="Release an event instance. After this, the event instance is unusable." alt="" coords="247,5,388,45"/>
-<area shape="rect" id="node3" href="$namespace_saga_1_1_audio_engine.html#a5d11a1de62f345b2c99752710e1dc48e" title="Stop an event that&#39;s playing." alt="" coords="247,69,388,109"/>
-<area shape="rect" id="node4" href="$namespace_saga_1_1_audio_engine.html#a5173e4fc9ebf69d95ae49e152b8a94cd" title="Unload an event&#39;s sample data." alt="" coords="247,133,388,173"/>
-</map>

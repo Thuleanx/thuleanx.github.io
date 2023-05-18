@@ -1,4 +1,0 @@
-<map id="Saga::GameWorld::broadcastEvent" name="Saga::GameWorld::broadcastEvent">
-<area shape="rect" id="node1" title="Broadcast an event to the world, so that Systems that listen to the event can be triggered." alt="" coords="5,5,200,45"/>
-<area shape="rect" id="node2" href="$class_saga_1_1_invokable_system_manager.html#a20d084755bdf5414ddb9a540663765f6" title="Broadcast an event. Only systems registered that are not tied to a specific entity will receive this ..." alt="" coords="248,5,456,45"/>
-</map>

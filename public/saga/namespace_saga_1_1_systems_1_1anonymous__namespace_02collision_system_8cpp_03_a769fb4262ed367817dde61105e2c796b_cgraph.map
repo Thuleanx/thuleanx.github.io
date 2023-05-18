@@ -1,4 +1,0 @@
-<map id="Saga::Systems::anonymous_namespace{collisionSystem::cpp}::rebuildStaticBVH" name="Saga::Systems::anonymous_namespace{collisionSystem::cpp}::rebuildStaticBVH">
-<area shape="rect" id="node1" title="This builds the bounding volume hierarchy for all static meshes in the scene, and stores it inside of..." alt="" coords="5,29,197,84"/>
-<area shape="rect" id="node2" href="$namespace_saga_1_1_systems_1_1anonymous__namespace_02collision_system_8cpp_03.html#a3f1121b03e23b8ab277f94455341558f" title="Retrieve the world&#39;s CollisionSystemData. This should live as a component on an entity...." alt="" coords="245,29,437,84"/>
-</map>

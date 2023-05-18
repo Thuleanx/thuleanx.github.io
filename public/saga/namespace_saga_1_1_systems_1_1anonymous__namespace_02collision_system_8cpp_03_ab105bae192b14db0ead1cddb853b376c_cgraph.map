@@ -1,6 +1,0 @@
-<map id="Saga::Systems::anonymous_namespace{collisionSystem::cpp}::rebuildUniformGrid" name="Saga::Systems::anonymous_namespace{collisionSystem::cpp}::rebuildUniformGrid">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,197,136"/>
-<area shape="rect" id="node2" href="$namespace_saga_1_1_systems_1_1anonymous__namespace_02collision_system_8cpp_03.html#a5492c15ef9318d976e1a6a47516d1672" title=" " alt="" coords="245,29,437,84"/>
-<area shape="rect" id="node4" href="$namespace_saga_1_1_systems_1_1anonymous__namespace_02collision_system_8cpp_03.html#a3f1121b03e23b8ab277f94455341558f" title="Retrieve the world&#39;s CollisionSystemData. This should live as a component on an entity...." alt="" coords="245,132,437,187"/>
-<area shape="rect" id="node3" href="$struct_saga_1_1_transform.html#a887f784dc39c0691b5b1e37581ef43e2" title=" " alt="" coords="485,44,652,69"/>
-</map>

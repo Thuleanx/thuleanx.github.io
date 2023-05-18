@@ -1,4 +1,0 @@
-<map id="Saga::Geometry::Triangle::toUV" name="Saga::Geometry::Triangle::toUV">
-<area shape="rect" id="node1" title="Convert a point from cartesian to UV coordinate." alt="" coords="5,5,176,45"/>
-<area shape="rect" id="node2" href="$struct_saga_1_1_geometry_1_1_triangle.html#afca2c293d75c1bcacc970f6a64fd69db" title="Convert a point from cartesian to barycentric coordinate with respect to the current triangle." alt="" coords="224,5,395,45"/>
-</map>

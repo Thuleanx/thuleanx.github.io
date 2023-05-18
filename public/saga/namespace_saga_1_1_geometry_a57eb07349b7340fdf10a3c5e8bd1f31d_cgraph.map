@@ -1,6 +1,0 @@
-<map id="Saga::Geometry::rayEllipsoidIntersection" name="Saga::Geometry::rayEllipsoidIntersection">
-<area shape="rect" id="node1" title="Find the intersection time t between a ray and an axis&#45;aligned ellipsoid." alt="" coords="5,5,197,45"/>
-<area shape="rect" id="node2" href="$namespace_saga_1_1_geometry.html#a69affaa563ef36bb7d5a5285e72926a7" title="Find the intersection time t between a unit sphere at the origin and a ray." alt="" coords="245,5,452,45"/>
-<area shape="rect" id="node3" href="$namespace_saga_1_1_math.html#a382b164c8a74d95c80949817117d9c19" title="Solve for the minimum t such that quadratic equation at^2 + bt + c = 0 is satisfied." alt="" coords="500,5,671,45"/>
-<area shape="rect" id="node4" href="$namespace_saga_1_1_math.html#a23dd964782912ea9ada9364c66140d90" title=" " alt="" coords="719,5,901,45"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="Saga::Geometry::unitSphereTriangleCollision" name="Saga::Geometry::unitSphereTriangleCollision">
-<area shape="rect" id="node1" title="Find the intersection time t between a moving unit sphere with a triangle." alt="" coords="5,69,192,109"/>
-<area shape="rect" id="node2" href="$namespace_saga_1_1_geometry.html#add7b98913befcb063a96f6aaf7dadcc4" title="Find the intersection time t where a ray and triangle intersects. Does not detect intersections to th..." alt="" coords="249,5,437,45"/>
-<area shape="rect" id="node3" href="$namespace_saga_1_1_geometry.html#a69affaa563ef36bb7d5a5285e72926a7" title="Find the intersection time t between a unit sphere at the origin and a ray." alt="" coords="240,69,447,109"/>
-<area shape="rect" id="node6" href="$namespace_saga_1_1_geometry.html#a218c5acf703f7e1816a888a27dfe29a8" title="Find collision between a moving unit sphere and an edge (line segment) in 3D." alt="" coords="250,133,437,173"/>
-<area shape="rect" id="node4" href="$namespace_saga_1_1_math.html#a382b164c8a74d95c80949817117d9c19" title="Solve for the minimum t such that quadratic equation at^2 + bt + c = 0 is satisfied." alt="" coords="495,101,665,141"/>
-<area shape="rect" id="node5" href="$namespace_saga_1_1_math.html#a23dd964782912ea9ada9364c66140d90" title=" " alt="" coords="713,101,896,141"/>
-</map>
