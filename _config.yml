@@ -81,9 +81,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mmistakes"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
 
 defaults:
   # _posts
@@ -119,9 +116,9 @@ tag_archive:
   path: /tags/
 
 collections:
-  games:
+  graphics:
     output: true
     permalink: /:collection/:path/
-  graphics:
+  games:
     output: true
     permalink: /:collection/:path/

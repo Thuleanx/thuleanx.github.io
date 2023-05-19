@@ -2,7 +2,9 @@
 title: "Portal Knight"
 excerpt: "3D isometric hack and slash"
 header:
-  image: /assets/images/gameCaptures/portal-knight/bannerv4.png
+  overlay_color: "#000"
+  overlay_filter: "0.1"
+  overlay_image: /assets/images/gameCaptures/portal-knight/bannerv5.png
   teaser: /assets/images/gameCaptures/portal-knight/swordVFX.gif
 sidebar:
   - title: "Role"
@@ -17,7 +19,7 @@ sidebar:
         and the main game's mechanic.
   - title: "Links"
     text: >-
-        [Itch.io](https://thuleanx.itch.io/gameCaptures/portal-knight) /
+        [Itch.io](https://thuleanx.itch.io/portal-knight) /
         [Repository](https://github.com/Thuleanx/PortalKnight)
 
 gallery:
