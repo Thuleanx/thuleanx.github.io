@@ -29,4 +29,16 @@ You run a daycare of demigod babies, and must compete with other daycares to win
 
 {% include video id="pnCwOAoY4mc" provider="youtube" %}
 
-As Lead Programmer, my main responsibility was de
+As Lead Programmer, my main responsibility was designing and implementing core features 
+such as the turn-based combat system, save system, and hub interactions.
+
+gallery:
+  - url: /assets/images/gameCaptures/enter/lazer.png
+    image_path: /assets/images/gameCaptures/enter/lazer.png
+  - url: /assets/images/gameCaptures/enter/glitchyBand.png
+    image_path: /assets/images/gameCaptures/enter/glitchyBand.png
+  - url: /assets/images/gameCaptures/enter/paste.png
+    image_path: /assets/images/gameCaptures/enter/paste.png
+
+I also filled in as VFX artist to implement procedural animations, particle systems, and UI tweening.
+
