@@ -4,14 +4,14 @@ excerpt: "2D Puzzle Platformer"
 header:
   overlay_color: "#000"
   overlay_filter: "0.1"
-  overlay_image: /assets/images/gameCaptures/portal-knight/bannerv5.png
-  teaser: /assets/images/gameCaptures/portal-knight/swordVFX.gif
+  overlay_image: /assets/images/gameCaptures/enter/lookToPlatform.png
+  teaser: /assets/images/gameCaptures/enter/death.gif
 sidebar:
   - title: "Role"
-    image: "/assets/images/gameCaptures/portal-knight/splash.png"
-    text: "Programmer, Audio Designer"
+    image: "/assets/images/gameCaptures/enter/logo.png"
+    text: "Co-Lead Programmer, VFX Artist"
   - title: "Tools"
-    text: "Unity, FMOD Studio"
+    text: "Unity, FMOD Studio, Aseprite"
   - title: "Responsiblities"
     text: >-
         Develop, prototype, and implement technical systems.
@@ -19,28 +19,45 @@ sidebar:
         and the main game's mechanic.
   - title: "Links"
     text: >-
-        [Itch.io](https://thuleanx.itch.io/portal-knight) /
+        [Itch.io](https://brownrisdgames.itch.io/enter) /
         [Repository](https://github.com/Thuleanx/PortalKnight)
 
 gallery:
-  - url: /assets/images/gameCaptures/portal-knight/initial_enter.png
-    image_path: /assets/images/gameCaptures/portal-knight/initial_enter.png
-  - url: /assets/images/gameCaptures/portal-knight/go forth.png
-    image_path: /assets/images/gameCaptures/portal-knight/go forth.png
-  - url: /assets/images/gameCaptures/portal-knight/light.png
-    image_path: /assets/images/gameCaptures/portal-knight/light.png
+  - url: /assets/images/gameCaptures/enter/lazer.png
+    image_path: /assets/images/gameCaptures/enter/lazer.png
+  - url: /assets/images/gameCaptures/enter/glitchyBand.png
+    image_path: /assets/images/gameCaptures/enter/glitchyBand.png
+  - url: /assets/images/gameCaptures/enter/paste.png
+    image_path: /assets/images/gameCaptures/enter/paste.png
+
+gallery2:
+  - url: /assets/images/gameCaptures/enter/pastePuzzle.gif
+    image_path: /assets/images/gameCaptures/enter/pastePuzzle.gif
+  - url: /assets/images/gameCaptures/enter/laserChase.gif
+    image_path: /assets/images/gameCaptures/enter/laserChase.gif
+
+gallery3:
+  - url: /assets/images/gameCaptures/enter/death.gif
+    image_path: /assets/images/gameCaptures/enter/death.gif
+  - url: /assets/images/gameCaptures/enter/beginningSequence.gif
+    image_path: /assets/images/gameCaptures/enter/beginningSequence.gif
+
 ---
 
-Portal Knight is a 3D isometric hack and slash game created as a submission for 
-[A Game By Its Cover Jam](https://itch.io/jam/a-game-by-its-cover-2022/entries) 
-over the month of November 2022. 
-I was in charge of programming and audio implementation and design, and 
-[Allison](https://allisonkyeh.com/) was the artist.
+Enter is a 2D Puzzle Platformer for PC and Mac, developed in Unity.
+As Co-Lead Programmer and VFX Artist, I was responsible for architecturing, developing, and refractoring the game's 
+systems and designing and implementing VFX.
 
+
+{% include gallery id="gallery2" %}
+
+I mainly worked on the scene management system, glitch effect for the virus enemy, beginning sequence, 
+lazer interaction and other interactible objects.
+I also worked closely with the Audio Designer to add SFX and adaptive music to the game, as well as mentored
+programmers less familiar with Unity.
+
+{% include gallery id="gallery3" %}
+<!-- {% include figure image_path="/assets/images/gameCaptures/enter/death.gif" alt="gameplay image" %} -->
 {% include gallery %}
-{% include figure image_path="/assets/images/gameCaptures/portal-knight/longFight.gif" alt="gameplay image" %}
-
-Throughout the course of development, I implemented enemy AI pathfinding with NavMesh, 
-branching narrative with YarnSpinner, audio with FMOD, and UI polish with DoTween.
 
 
