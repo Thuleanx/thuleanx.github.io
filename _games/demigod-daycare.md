@@ -3,8 +3,8 @@ title: "Demigod Daycare"
 excerpt: "Collectible 2D Auto-battler"
 header:
   overlay_color: "#000"
-  overlay_filter: "0.1"
-  overlay_image: /assets/images/gameCaptures/demigod-daycare/coverHigherRes.gif
+  overlay_filter: "0.3"
+  overlay_image: /assets/images/gameCaptures/demigod-daycare/banner.png
   teaser: /assets/images/gameCaptures/demigod-daycare/b0.gif
 sidebar:
   - title: "Role"
