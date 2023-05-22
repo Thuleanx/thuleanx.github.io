@@ -2,9 +2,6 @@
 title: "Water Wavelets"
 excerpt: "Ocean Surface Simulation"
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.1"
-  overlay_image: /assets/images/graphicsCaptures/waterwavelet/ambientWaves.png
   teaser: /assets/images/graphicsCaptures/waterwavelet/waterWaveletIntroduce.gif
 sidebar:
   - title: "Role"
@@ -39,6 +36,9 @@ gallery2:
     image_path: /assets/images/graphicsCaptures/waterwavelet/reflectionVisualization.png
     title: "Reflection seen in the simulation visualizer."
 ---
+<!-- overlay_color: "#000" -->
+<!-- overlay_filter: "0.1" -->
+<!-- overlay_image: /assets/images/graphicsCaptures/waterwavelet/ambientWaves.png -->
 
 As a final project for my graduate graphics class, my team implemented a [Water Surface Wavelet from SIGGRAPH 2018](https://dl.acm.org/doi/pdf/10.1145/3197517.3201336).
 Unlike traditional FFT-based implementations of water surface, the paper's wavelet-based approach 

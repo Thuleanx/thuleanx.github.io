@@ -2,9 +2,6 @@
 title: "Realtime"
 excerpt: "OpenGL Realtime Renderer"
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.0"
-  overlay_image: /assets/images/graphicsCaptures/realtime/chess.png
   teaser: /assets/images/graphicsCaptures/realtime/brightChessSSAO.png
 sidebar:
   - title: "Tools"
@@ -38,6 +35,10 @@ gallery2:
     image_path: /assets/images/graphicsCaptures/realtime/sharpen.png
 
 ---
+
+  <!-- overlay_color: "#000" -->
+  <!-- overlay_filter: "0.0" -->
+  <!-- overlay_image: /assets/images/graphicsCaptures/realtime/chess.png -->
 
 Realtime is my month-long project for Brown's computer graphics class. 
 I implemented the rendering pipeline that loads and render a scene file with the GUI to interactively adjust the tesselation

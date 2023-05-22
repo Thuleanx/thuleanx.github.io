@@ -2,9 +2,6 @@
 title: "Saga Engine"
 excerpt: "3D game engine"
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.1"
-  overlay_image: /assets/images/graphicsCaptures/saga/post processing.png
   teaser: /assets/images/graphicsCaptures/saga/starCollection.gif
 sidebar:
   - title: "Role"
@@ -54,6 +51,10 @@ gallery3:
     image_path: /assets/images/graphicsCaptures/saga/whiteBalance.png
     title: "Applying white balance (tint / temperature)."
 ---
+
+  <!-- overlay_color: "#000" -->
+  <!-- overlay_filter: "0.1" -->
+  <!-- overlay_image: /assets/images/graphicsCaptures/saga/post processing.png -->
 
 Saga is an Entity-Component-Systems based game engine made as part of Brown's 3D Game Engine class.
 

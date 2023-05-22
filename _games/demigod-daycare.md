@@ -2,9 +2,6 @@
 title: "Demigod Daycare"
 excerpt: "Collectible 2D Auto-battler"
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.3"
-  overlay_image: /assets/images/gameCaptures/demigod-daycare/banner.png
   teaser: /assets/images/gameCaptures/demigod-daycare/b0.gif
 sidebar:
   - title: "Role"
@@ -43,6 +40,9 @@ gallery:
   - url: /assets/images/gameCaptures/demigod-daycare/lineup.gif
     image_path: /assets/images/gameCaptures/demigod-daycare/lineup.gif
 ---
+  <!-- overlay_color: "#000" -->
+  <!-- overlay_filter: "0.3" -->
+  <!-- overlay_image: /assets/images/gameCaptures/demigod-daycare/banner.png -->
 
 Demigod daycare is an auto-battler game inspired by Super Auto Pets, developed in Unity and 
 released on the Android + IOS Store.

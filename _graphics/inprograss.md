@@ -2,9 +2,6 @@
 title: "Inprograss"
 excerpt: "Interactive Procedural Grass"
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.1"
-  overlay_image: /assets/images/graphicsCaptures/inprograss/banner.png
   teaser: /assets/images/graphicsCaptures/inprograss/showcase.gif
 sidebar:
   - title: "Role"
@@ -20,6 +17,9 @@ sidebar:
     text: >-
         [Repository](https://github.com/Thuleanx/Grass)
 ---
+  <!-- overlay_color: "#000" -->
+  <!-- overlay_filter: "0.1" -->
+  <!-- overlay_image: /assets/images/graphicsCaptures/inprograss/banner.png -->
 
 Inprograss is a realtime grass generator I created as my week-long final project for Brown's computer graphics class.
 All the grass are generated using a compute shader and lives entirely on the GPU, which allows for 10 million unique blades of grass to be 

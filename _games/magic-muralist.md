@@ -2,9 +2,6 @@
 title: "Magic Muralist"
 excerpt: "2.5 Magic Painting Game"
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.1"
-  overlay_image: /assets/images/gameCaptures/magic-muralist/painting5.png
   teaser: /assets/images/gameCaptures/magic-muralist/icon.gif
 sidebar:
   - title: "Role"
@@ -49,6 +46,9 @@ gallery3:
   - url: /assets/images/gameCaptures/magic-muralist/requestSO.png
     image_path: /assets/images/gameCaptures/magic-muralist/requestSOCloseup3.png
 ---
+  <!-- overlay_color: "#000" -->
+  <!-- overlay_filter: "0.1" -->
+  <!-- overlay_image: /assets/images/gameCaptures/magic-muralist/painting5.png -->
 
 Magic Muralist is a 2.5D Drawing Game for PC and Mac, developed in Unity as a 3-day game jam project.
 I was responsible for all technical implementation, and worked closely alongside two artists.

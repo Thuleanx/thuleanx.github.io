@@ -2,9 +2,6 @@
 title: "Enter"
 excerpt: "2D Puzzle Platformer"
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.1"
-  overlay_image: /assets/images/gameCaptures/enter/lookToPlatform.png
   teaser: /assets/images/gameCaptures/enter/death.gif
 sidebar:
   - title: "Role"
@@ -43,7 +40,9 @@ gallery3:
     image_path: /assets/images/gameCaptures/enter/beginningSequence.gif
 
 ---
-
+  <!-- overlay_color: "#000" -->
+  <!-- overlay_filter: "0.1" -->
+  <!-- overlay_image: /assets/images/gameCaptures/enter/lookToPlatform.png -->
 Enter is a 2D Puzzle Platformer for PC and Mac, developed in Unity.
 As Co-Lead Programmer and VFX Artist, I was responsible for architecturing, developing, and refractoring the game's 
 systems and designing and implementing VFX.

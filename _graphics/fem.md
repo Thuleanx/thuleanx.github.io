@@ -2,9 +2,6 @@
 title: "Soft Body Simulation"
 excerpt: "Finite Element Method"
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/images/graphicsCaptures/fem/banner.png
   teaser: /assets/images/graphicsCaptures/fem/meshroom x sphere.gif
 sidebar:
   - title: "Tools"
@@ -49,6 +46,9 @@ gallery4:
     title: "Adaptive 60 simulation frames per second on average."
 
 ---
+  <!-- overlay_color: "#000" -->
+  <!-- overlay_filter: "0.5" -->
+  <!-- overlay_image: /assets/images/graphicsCaptures/fem/banner.png -->
 
 Following this [1997 Siggraph course](https://www.cs.cmu.edu/~baraff/sigcourse/) and [1999 paper](http://graphics.berkeley.edu/papers/Obrien-GMA-1999-08/Obrien-GMA-1999-08.pdf), 
 I implemented realistic physics simulation over two weeks in C++ and OpenGL utilizing the Finite Element Method.
@@ -69,7 +69,5 @@ When objects are not being deformed, we don't need to simulate them too precisel
 I implemented adaptive stepsizing to adjust my timestep to ensure that the simulation uses the largest 
 possible timestep while staying under an error threshold. 
 
-{% include gallery id="gallery4" %}
-
-
+{% include gallery id="gallery4" caption="5000 fps vs average 60fps simulation" %}
 

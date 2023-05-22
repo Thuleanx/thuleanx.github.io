@@ -2,9 +2,6 @@
 title: "Ray"
 excerpt: "Optimized C++ RayTracer"
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.0"
-  overlay_image: /assets/images/graphicsCaptures/ray/raykiller.png
   teaser: /assets/images/graphicsCaptures/ray/recursiveSphere8.png
 sidebar:
   - title: "Tools"
@@ -51,6 +48,9 @@ gallery3:
     image_path: /assets/images/graphicsCaptures/ray/refraction.png
 
 ---
+  <!-- overlay_color: "#000" -->
+  <!-- overlay_filter: "0.0" -->
+  <!-- overlay_image: /assets/images/graphicsCaptures/ray/raykiller.png -->
 
 As a month-long project for Brown's computer graphics class, I made this raycaster using C++, OpenGL, and Qt.
 It supports shadow, texture mapping, reflection, refraction, and depth of field.

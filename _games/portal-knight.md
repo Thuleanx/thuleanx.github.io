@@ -2,9 +2,6 @@
 title: "Portal Knight"
 excerpt: "3D isometric hack and slash"
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.1"
-  overlay_image: /assets/images/gameCaptures/portal-knight/bannerv5.png
   teaser: /assets/images/gameCaptures/portal-knight/swordVFX.gif
 sidebar:
   - title: "Role"
@@ -30,6 +27,9 @@ gallery:
   - url: /assets/images/gameCaptures/portal-knight/light.png
     image_path: /assets/images/gameCaptures/portal-knight/light.png
 ---
+  <!-- overlay_color: "#000" -->
+  <!-- overlay_filter: "0.1" -->
+  <!-- overlay_image: /assets/images/gameCaptures/portal-knight/bannerv5.png -->
 
 Portal Knight is a 3D isometric hack and slash game created as a submission for 
 [A Game By Its Cover Jam](https://itch.io/jam/a-game-by-its-cover-2022/entries) 
