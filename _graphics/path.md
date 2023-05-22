@@ -28,8 +28,8 @@ gallery2:
     image_path: /assets/images/graphicsCaptures/path/csphere_100pp_dl_importance.png
 
 gallery3:
-  - url: /assets/images/graphicsCaptures/path/coriginal_100pp_noOpt.png
-    image_path: /assets/images/graphicsCaptures/path/coriginal_100pp_noOpt.png
+  - url: /assets/images/graphicsCaptures/path/coriginal_100pp.png
+    image_path: /assets/images/graphicsCaptures/path/coriginal_100pp.png
   - url: /assets/images/graphicsCaptures/path/coriginal_100pp_dl.png
     image_path: /assets/images/graphicsCaptures/path/coriginal_100pp_dl.png
     
