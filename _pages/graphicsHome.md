@@ -10,6 +10,7 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/gameCaptures/portal-knight/longFight.gif
 excerpt: "Game / Graphics Programmer"
+permalink: "/graphicsHome"
 
 feature_row:
   - image_path: /assets/images/graphicsCaptures/inprograss/showcase.gif
