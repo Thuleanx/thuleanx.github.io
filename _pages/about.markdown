@@ -4,15 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+![image-left](/assets/images/logo.png){: .align-left}
+Hi. I'm An Nguyen / Thuleanx, a gameplay and graphics programmer.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I love turning programming into a tool for creative expression and interactive storytelling. 
+I especially enjoy doing game jams, where I get to explore aspects of computer graphics, audio integration, and tools creation.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Outside of games, I also do cryptography research, competitive programming, and occasionally dabble in pixel art.
 
+I'm looking for full-time opportunities on cool game and graphics projects. Feel free to reach out to me at [thuleanx@tutanota.com](thuleanx@tutanota.com).
 
-[jekyll-organization]: https://github.com/jekyll
+:>
