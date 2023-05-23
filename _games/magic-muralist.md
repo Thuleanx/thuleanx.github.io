@@ -4,19 +4,19 @@ excerpt: "2.5 Magic Painting Game"
 header:
   teaser: /assets/images/gameCaptures/magic-muralist/icon.gif
 sidebar:
-  - title: "Role"
+  - title: "Links"
     image: "/assets/images/gameCaptures/magic-muralist/logo.png"
+    text: >-
+        [Itch.io](https://valkoy.itch.io/magic-muralist) /
+        [Repository](https://github.com/Thuleanx/GMTK2022/tree/main/GMTK22/Assets/Scripts)
+  - title: "Role"
     text: "Sole Programmer"
-  - title: "Tools"
-    text: "Unity, FMOD Studio, Aseprite"
   - title: "Responsiblities"
     text: >-
         Develop, prototype, and implement gameplay systems.
         This includes dialogue, drawing mechanic, drawing request encounters, and sound integration.
-  - title: "Links"
-    text: >-
-        [Itch.io](https://valkoy.itch.io/magic-muralist) /
-        [Repository](https://github.com/Thuleanx/GMTK2022/tree/main/GMTK22/Assets/Scripts)
+  - title: "Tools"
+    text: "Unity, FMOD Studio, Aseprite"
 
 gallery:
   - url: /assets/images/gameCaptures/magic-muralist/evaluation.gif

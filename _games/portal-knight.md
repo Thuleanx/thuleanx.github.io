@@ -4,20 +4,20 @@ excerpt: "3D isometric hack and slash"
 header:
   teaser: /assets/images/gameCaptures/portal-knight/swordVFX.gif
 sidebar:
-  - title: "Role"
+  - title: "Links"
     image: "/assets/images/gameCaptures/portal-knight/splash.png"
+    text: >-
+        [Itch.io](https://thuleanx.itch.io/portal-knight) /
+        [Repository](https://github.com/Thuleanx/PortalKnight)
+  - title: "Role"
     text: "Programmer, Audio Designer"
-  - title: "Tools"
-    text: "Unity, FMOD Studio"
   - title: "Responsiblities"
     text: >-
         Develop, prototype, and implement technical systems.
         This includes AI Behaviour, various VFX + graphics features, UI polish, sound integration, 
         and the main game's mechanic.
-  - title: "Links"
-    text: >-
-        [Itch.io](https://thuleanx.itch.io/portal-knight) /
-        [Repository](https://github.com/Thuleanx/PortalKnight)
+  - title: "Tools"
+    text: "Unity, FMOD Studio"
 
 gallery:
   - url: /assets/images/gameCaptures/portal-knight/initial_enter.png

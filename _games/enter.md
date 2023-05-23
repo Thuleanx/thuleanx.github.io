@@ -4,20 +4,20 @@ excerpt: "2D Puzzle Platformer"
 header:
   teaser: /assets/images/gameCaptures/enter/death.gif
 sidebar:
-  - title: "Role"
+  - title: "Links"
     image: "/assets/images/gameCaptures/enter/logo.png"
+    text: >-
+        [Itch.io](https://brownrisdgames.itch.io/enter) /
+        [Repository](https://github.com/Thuleanx/PortalKnight)
+  - title: "Role"
     text: "Co-Lead Programmer, VFX Artist"
-  - title: "Tools"
-    text: "Unity, FMOD Studio, Aseprite"
   - title: "Responsiblities"
     text: >-
         Develop, prototype, and implement technical systems.
         This includes AI Behaviour, various VFX + graphics features, UI polish, sound integration, 
         and the main game's mechanic.
-  - title: "Links"
-    text: >-
-        [Itch.io](https://brownrisdgames.itch.io/enter) /
-        [Repository](https://github.com/Thuleanx/PortalKnight)
+  - title: "Tools"
+    text: "Unity, FMOD Studio, Aseprite"
 
 gallery:
   - url: /assets/images/gameCaptures/enter/lazer.png

@@ -4,19 +4,19 @@ excerpt: "Collectible 2D Auto-battler"
 header:
   teaser: /assets/images/gameCaptures/demigod-daycare/b0.gif
 sidebar:
-  - title: "Role"
+  - title: "Links"
     image: "/assets/images/gameCaptures/demigod-daycare/logo.png"
+    text: >-
+        [App Store](https://apps.apple.com/at/app/demigod-daycare-autobattler/id1630237568?l=en) /
+        [Google Play](https://play.google.com/store/apps/details?id=com.MassDiGi.DemigodDaycare&gl=US&pli=1)
+  - title: "Role"
     text: "Lead Programmer"
-  - title: "Tools"
-    text: "Unity, PlasticSCM"
   - title: "Responsiblities"
     text: >-
         Design, prototype, and develop the main game mechanics.
         Implement enemy AI, turn-based combat system, UI polish, and combat particle effects.
-  - title: "Links"
-    text: >-
-        [App Store](https://apps.apple.com/at/app/demigod-daycare-autobattler/id1630237568?l=en) /
-        [Google Play](https://play.google.com/store/apps/details?id=com.MassDiGi.DemigodDaycare&gl=US&pli=1)
+  - title: "Tools"
+    text: "Unity, PlasticSCM"
 
 gallery:
   - url: /assets/images/gameCaptures/demigod-daycare/b1cut.gif
