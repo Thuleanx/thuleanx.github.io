@@ -58,4 +58,3 @@ such as the turn-based combat system, save system, and hub interactions.
 I also filled in as VFX artist to implement procedural animations, particle systems, and UI tweening.
 
 
-
