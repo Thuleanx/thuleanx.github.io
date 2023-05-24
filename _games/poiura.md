@@ -1,0 +1,77 @@
+---
+title: "Poiura"
+excerpt: "Narrative Horror Adventure"
+header:
+  teaser: /assets/images/gameCaptures/poiura/towngif.gif
+sidebar:
+  - title: "Links"
+    image: "/assets/images/gameCaptures/poiura/cover.png"
+    text: >-
+        [Itch.io](https://thuleanx.itch.io/poiura)
+  - title: "Responsiblities"
+    text: >-
+        - Design and implement state machine player controller, dialogue system, and .
+
+        - Produce art assets in aseprite, and create particles for the environment, projectiles, and enemies.
+
+  - title: "Tools"
+    text: "Unity, FMOD Studio, Aseprite"
+
+display:
+  - url: /assets/images/gameCaptures/poiura/infant.png
+    image_path: /assets/images/gameCaptures/poiura/infant.png
+  - url: /assets/images/gameCaptures/poiura/towngif.gif
+    image_path: /assets/images/gameCaptures/poiura/towngif.gif
+  - url: /assets/images/gameCaptures/poiura/end.gif
+    image_path: /assets/images/gameCaptures/poiura/end.gif
+
+blunderbuss:
+  - url: /assets/images/gameCaptures/poiura/shoot.gif
+    image_path: /assets/images/gameCaptures/poiura/shoot.gif
+  - url: /assets/images/gameCaptures/poiura/reloadZoom.gif
+    image_path: /assets/images/gameCaptures/poiura/reloadZoom.gif
+
+environment:
+  - url: /assets/images/gameCaptures/poiura/townDay.gif
+    image_path: /assets/images/gameCaptures/poiura/townDay.gif
+  - url: /assets/images/gameCaptures/poiura/townNight.gif
+    image_path: /assets/images/gameCaptures/poiura/townNight.gif
+  - url: /assets/images/gameCaptures/poiura/longvoid1.png
+    image_path: /assets/images/gameCaptures/poiura/longvoid1.png
+  - url: /assets/images/gameCaptures/poiura/longvoid2.gif
+    image_path: /assets/images/gameCaptures/poiura/longvoid2.gif
+
+cutscenes:
+  - url: /assets/images/gameCaptures/poiura/cutscene.gif
+    image_path: /assets/images/gameCaptures/poiura/cutscene.gif
+  - url: /assets/images/gameCaptures/poiura/dialogue.gif
+    image_path: /assets/images/gameCaptures/poiura/dialogue.gif
+
+---
+
+Poiura was my entry to a 15 days narrative game jam with Dylan, a writer and audio designer. I was responsible for programming and art; Beyond programming the game's mechanics, I also focused on writing shaders, 
+implementing particle effects, and integrating dialogue using Yarn Spinner.
+
+{% include gallery id="display"%}
+
+We wanted a horror game where the player is not running away helplessly. 
+I gave the main character an inaccurate blunderbuss that reloads very slowly. 
+Knockback, screenshake, and particle effects were added to emphasize the gun's impact.
+
+{% include gallery id="blunderbuss"%}
+
+For the town and the dangerous red woods beyond it, I added lighting, particles, and a foliage shader to enhance the environment.
+
+{% include gallery id="environment" layout="half"%}
+
+To accommodate for transitioning between the roughly 20 scenes of the game, I created a scene handler system using Scriptable Objects, that grew into this graphical node-based mapper. 
+This allowed me to create rooms and transitions in an environment similar to the Unity Animator window.
+
+{% include figure image_path="/assets/images/gameCaptures/poiura/mapping.png" alt="gameplay image" %}
+
+For the dialogue, I integrated Yarn Spinner to insert Dylan's script into the game. 
+I used Yarn Spinner both as a dialogue tree and a programming language to trigger different world events and Unity Timelines.
+
+{% include gallery id="cutscenes" layout="half"%}
+{% include figure image_path="/assets/images/gameCaptures/poiura/yarnZoomed.png" %}
+
