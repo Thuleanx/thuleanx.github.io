@@ -60,12 +60,15 @@ I was in charge of programming, audio, and part of the VFX.
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">State Machine (for player and enemies)</summary>
+## State Machine (for players and enemies)
 
+![Shadow Enemies](/assets/images/gameCaptures/portal-knight/aitest.gif){:.align-right}
 I developed a simple finite state machine that can be applied to player and AI.
 
-The statemachine is a component that features a list of states with events for entering, exiting, and update. 
+The statemachine is a component that features a list of states with events for entering, exiting, and update, as
+well as the ability for each state to specify a coroutine to run on entrance. 
 It lives on a separate assembly definition as the main game code, and is therefore portable to other projects and does not drag down compile time.
+
 
 <details><summary markdown="span">Code Snippet - State Machine</summary>
 
@@ -101,7 +104,7 @@ public abstract class StateMachine<Agent> : MonoBehaviour {
             if (stateCoroutine != null) 
                 StopCoroutine(currentCoroutine);
             
-            if (_currentState > 0)
+            if (_currentState >= 0)
                 States[_currentState]?.End(agent);
 
             _currentState = value;
@@ -201,9 +204,8 @@ public class ShadowAttackState : State<ShadowEnemy> {
 ```
 </details>
 
-</details>
 
-<details><summary markdown="span">AI Navigation with NavMesh</summary>
+## Navigation with NavMesh
 
 ![AI Move Slope](/assets/images/gameCaptures/portal-knight/playerWalkSlope.gif){:.align-right}
 Portal Knight's AI uses both a combination of two independent Unity's systems: Character Controller and Navigation mesh.
@@ -269,11 +271,9 @@ protected Vector3 adjustVelocityToSlope(Vector3 velocity, float slopeLimit) {
 
 </details>
 
-</details>
-
-<details><summary markdown="span">Camera Occlusion System</summary>
+## Camera Occlusion System
 I implemented a system that occludes objects that obstructs the player's view.
-It works creating a sphere mask around the player, and using that to determine the alpha clipping inside a fragment shader (with Unity's shader graph).
+It works by creating a sphere mask around the player, and using that to determine the alpha clipping inside a fragment shader (with Unity's shader graph).
 
 {::options parse_block_html="false" /}
 {% include gallery id="occlusion" %}
@@ -285,14 +285,12 @@ The following is the shader graph for occlusion of opaque objects.
 It determines alpha clipping from a sphere mask around the player, but also making sure that objects behind the player and 
 pixels near the player's feet does not get occluded (upper block).
 
-
 {::options parse_block_html="false" /}
 {% include gallery id="occlusionShader" caption="Shader graph for occlusion system."%}
 {::options parse_block_html="true" /}
 
 </details>
 
-</details>
 
 {::options parse_block_html="false" /}
 
