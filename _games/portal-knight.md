@@ -34,6 +34,17 @@ gallery:
     image_path: /assets/images/gameCaptures/portal-knight/go forth.png
   - url: /assets/images/gameCaptures/portal-knight/light.png
     image_path: /assets/images/gameCaptures/portal-knight/light.png
+
+occlusion:
+  - url: /assets/images/gameCaptures/portal-knight/ingameOcclusion.gif
+    image_path: /assets/images/gameCaptures/portal-knight/ingameOcclusion.gif
+  - url: /assets/images/gameCaptures/portal-knight/earlyOcclusionCropped.gif
+    image_path: /assets/images/gameCaptures/portal-knight/earlyOcclusionCropped.gif
+
+occlusionShader:
+  - url: /assets/images/gameCaptures/portal-knight/occlusionShader.png
+    image_path: /assets/images/gameCaptures/portal-knight/occlusionShader.png
+
 ---
   <!-- overlay_color: "#000" -->
   <!-- overlay_filter: "0.1" -->
@@ -260,6 +271,28 @@ protected Vector3 adjustVelocityToSlope(Vector3 velocity, float slopeLimit) {
 
 </details>
 
+<details><summary markdown="span">Camera Occlusion System</summary>
+I implemented a system that occludes objects that obstructs the player's view.
+It works creating a sphere mask around the player, and using that to determine the alpha clipping inside a fragment shader (with Unity's shader graph).
+
+{::options parse_block_html="false" /}
+{% include gallery id="occlusion" %}
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">Shader Graph - Occlusion System </summary>
+
+The following is the shader graph for occlusion of opaque objects. 
+It determines alpha clipping from a sphere mask around the player, but also making sure that objects behind the player and 
+pixels near the player's feet does not get occluded (upper block).
+
+
+{::options parse_block_html="false" /}
+{% include gallery id="occlusionShader" caption="Shader graph for occlusion system."%}
+{::options parse_block_html="true" /}
+
+</details>
+
+</details>
 
 {::options parse_block_html="false" /}
 

@@ -6,7 +6,7 @@ collection: graphics
 entries_layout: grid
 classes: wide
 
-feature_row:
+graphics_row:
   - image_path: /assets/images/graphicsCaptures/inprograss/showcase.gif
     title: "Procedural Grass"
     excerpt: >-
