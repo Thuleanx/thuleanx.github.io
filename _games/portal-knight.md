@@ -45,6 +45,14 @@ occlusionShader:
   - url: /assets/images/gameCaptures/portal-knight/occlusionShader.png
     image_path: /assets/images/gameCaptures/portal-knight/occlusionShader.png
 
+screenWipeShaderTwirl:
+  - url: /assets/images/gameCaptures/portal-knight/twirlMaskShader.png
+    image_path: /assets/images/gameCaptures/portal-knight/twirlMaskShader.png
+
+screenWipeShaderCombine:
+  - url: /assets/images/gameCaptures/portal-knight/screenWipeShaderCombine.png
+    image_path: /assets/images/gameCaptures/portal-knight/screenWipeShaderCombine.png
+
 ---
   <!-- overlay_color: "#000" -->
   <!-- overlay_filter: "0.1" -->
@@ -58,7 +66,6 @@ I was in charge of programming, audio, and part of the VFX.
 {% include gallery %}
 {% include figure image_path="/assets/images/gameCaptures/portal-knight/longFight.gif" alt="gameplay image" %}
 
-{::options parse_block_html="true" /}
 
 ## State Machine (for players and enemies)
 
@@ -70,6 +77,7 @@ well as the ability for each state to specify a coroutine to run on entrance.
 It lives on a separate assembly definition as the main game code, and is therefore portable to other projects and does not drag down compile time.
 
 
+{::options parse_block_html="true" /}
 <details><summary markdown="span">Code Snippet - State Machine</summary>
 
 ```c++
@@ -203,6 +211,7 @@ public class ShadowAttackState : State<ShadowEnemy> {
 //...
 ```
 </details>
+{::options parse_block_html="false" /}
 
 
 ## Navigation with NavMesh
@@ -214,6 +223,7 @@ I made the game's entities move while respecting both systems, and accurately ad
 
 Below is code snippet of movement inside of the Movable class, which both enemy and player agents inherit from.
 
+{::options parse_block_html="true" /}
 <details><summary markdown="span">Code Snippet - Movement </summary>
 
 ```c++
@@ -270,29 +280,83 @@ protected Vector3 adjustVelocityToSlope(Vector3 velocity, float slopeLimit) {
 ```
 
 </details>
+{::options parse_block_html="false" /}
 
 ## Camera Occlusion System
 I implemented a system that occludes objects that obstructs the player's view.
 It works by creating a sphere mask around the player, and using that to determine the alpha clipping inside a fragment shader (with Unity's shader graph).
 
-{::options parse_block_html="false" /}
 {% include gallery id="occlusion" %}
-{::options parse_block_html="true" /}
 
+{::options parse_block_html="true" /}
 <details><summary markdown="span">Shader Graph - Occlusion System </summary>
 
 The following is the shader graph for occlusion of opaque objects. 
 It determines alpha clipping from a sphere mask around the player, but also making sure that objects behind the player and 
-pixels near the player's feet does not get occluded (upper block).
+pixels near the player's feet are not occluded.
 
 {::options parse_block_html="false" /}
 {% include gallery id="occlusionShader" caption="Shader graph for occlusion system."%}
 {::options parse_block_html="true" /}
 
 </details>
-
-
 {::options parse_block_html="false" /}
 
 
+## Death VFX
+![death effect](/assets/images/gameCaptures/portal-knight/ingameDeathCropped.gif){:.align-right}
+With VFX Graph and Unity's shader graph, I designed and implemented VFX for death and screen wipe. 
 
+It roughly works as follows: 
+- When players health depletes, they get locked into the idle animation and dissolve away with a shader.
+- I added emission to the player and GPU-based particles are emitted on the player mesh's surface.
+- A material on a screen-wide texture is procedurally animated to produce the screen wipe effect with a shader and DoTween.
+
+{::options parse_block_html="true" /}
+<details><summary markdown="span">Shader Graph - Twirl Effect </summary>
+
+![death effect](/assets/images/gameCaptures/portal-knight/deathVFXCropped.gif){:.align-left}
+The following are shader graph for the twirly death screen wipe. It first generates a sphere mask around the player as well
+as a twirling noise, then combining them and color.
+
+{::options parse_block_html="false" /}
+{% include figure image_path="/assets/images/gameCaptures/portal-knight/twirlMaskShader.png" 
+caption="Shader graph for twirl and sphere mask around player." %}
+![death effect](/assets/images/gameCaptures/portal-knight/deathCropped.png){:.align-right}
+{% include figure image_path="/assets/images/gameCaptures/portal-knight/screenWipeShaderCombine.png" 
+caption="Shader Graph for coloring twirl and combining with sphere mask."%}
+{::options parse_block_html="true" /}
+
+</details>
+{::options parse_block_html="false" /}
+
+{::options parse_block_html="true" /}
+<details><summary markdown="span">Code Snippet - Twirl Effect </summary>
+
+The following is a snippet for code for screen wipe using DoTween. 
+To animate the screen wipe, it manipulates parameters of a material of a 
+screen-wide overlayed image.
+```c++
+IEnumerator _deathWipe(string sceneName) {
+    SetEnableWipeEffect(true);
+    // zoom in to player
+    currentTween = DOVirtual.Float(maxRange, focusRange, fadeOutDuration.x, 
+        (x) => SetMaskRange(x)).SetEase(easeFocus);
+    yield return currentTween.WaitForCompletion();
+    yield return new WaitForSeconds(focusWait);
+    currentTween?.Kill();
+
+    // totally occlude screen
+    float fadeOutDurationTail = fadeOutDuration.y - fadeOutDuration.x;
+    currentTween = DOVirtual.Float(focusRange, minRange, fadeOutDurationTail,
+        (x) => SetMaskRange(x)).SetEase(easeOut);
+    yield return currentTween.WaitForCompletion();
+    App.instance.RequestLoad(sceneName);
+    transitioning = false;	
+}
+
+public void SetMaskRange(float value) => BlockoutImage.material.SetFloat("_Radius", value);
+public void SetEnableWipeEffect(bool value) => BlockoutImage.material.SetFloat("_Enabled", value ? 1 : 0);
+```
+</details>
+{::options parse_block_html="false" /}
