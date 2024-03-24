@@ -1,10 +1,9 @@
 ---
-title: Games
 layout: collection
 permalink: /games/
 collection: games
 entries_layout: grid
-classes: wide
+show_excerpts: false
 
 feature_row:
   - image_path: /assets/images/gameCaptures/demigod-daycare/b0.gif
@@ -78,6 +77,3 @@ feature_row:
     btn_label: "Read More"
     btn_class: "btn--inverse"
 ---
-
-## Featured
-{% include feature_row %}

@@ -1,0 +1,13 @@
+{% if include.id %}
+  {% assign feature_row = page[include.id] %}
+{% else %}
+  {% assign feature_row = page.feature_row %}
+{% endif %}
+
+<div class="entries-{{ page.entries_layout | default: 'list' }}">
+
+  {% for entry in feature_row %}
+    {% include entry.html %}
+  {% endfor %}
+
+</div>

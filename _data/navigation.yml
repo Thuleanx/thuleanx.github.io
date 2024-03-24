@@ -1,10 +1,9 @@
 # main links
-main:
-  - title: "Home"
-    url: /index
-  - title: "About"
-    url: /about
-  - title: "Games"
-    url: /games
-  - title: "Graphics"
-    url: /graphics
+- title: "Home"
+  url: /index
+- title: "About"
+  url: /about
+- title: "Games"
+  url: /games
+- title: "Graphics"
+  url: /graphics

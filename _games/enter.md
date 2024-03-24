@@ -1,62 +1,48 @@
 ---
+layout: post
 title: "Enter"
-excerpt: "2D Puzzle Platformer"
-header:
-  teaser: /assets/images/gameCaptures/enter/death.gif
+image: 
+    thumbnail: /assets/images/gameCaptures/enter/laserChase.gif
 sidebar:
-  - title: "Links"
-    image: "/assets/images/gameCaptures/enter/logo.png"
-    text: >-
-        [Itch.io](https://brownrisdgames.itch.io/enter) /
-        [Repository](https://github.com/Thuleanx/PortalKnight)
-  - title: "Role"
-    text: "Co-Lead Programmer, VFX Artist"
-  - title: "Responsiblities"
-    text: >-
-        Develop, prototype, and implement technical systems.
-        This includes AI Behaviour, various VFX + graphics features, UI polish, sound integration, 
-        and the main game's mechanic.
-  - title: "Tools"
-    text: "Unity, FMOD Studio, Aseprite"
+  - text: >-
+        - Seemless scene / camera transition system
 
-gallery:
-  - url: /assets/images/gameCaptures/enter/lazer.png
-    image_path: /assets/images/gameCaptures/enter/lazer.png
-  - url: /assets/images/gameCaptures/enter/glitchyBand.png
-    image_path: /assets/images/gameCaptures/enter/glitchyBand.png
-  - url: /assets/images/gameCaptures/enter/paste.png
-    image_path: /assets/images/gameCaptures/enter/paste.png
+        - FMOD integration and volume control
 
-gallery2:
-  - url: /assets/images/gameCaptures/enter/pastePuzzle.gif
-    image_path: /assets/images/gameCaptures/enter/pastePuzzle.gif
-  - url: /assets/images/gameCaptures/enter/laserChase.gif
-    image_path: /assets/images/gameCaptures/enter/laserChase.gif
+        - Death + Virus vfx, pixel perfect post processing
 
-gallery3:
-  - url: /assets/images/gameCaptures/enter/death.gif
-    image_path: /assets/images/gameCaptures/enter/death.gif
-  - url: /assets/images/gameCaptures/enter/beginningSequence.gif
-    image_path: /assets/images/gameCaptures/enter/beginningSequence.gif
+        - Beginning cinematics
 
+        <hr>
+    image: /assets/images/gameCaptures/enter/logo.png
+  - text: >-
+
+        **Jam Project**<br>
+        **Team:** 2 <br>
+        **Tools:** Unity, FMOD<br>
+        **Duration:** 1 semester<br>
+        **Platforms:** Windows, Mac<br>
+    links:
+      - title: "Itch"
+        url: "https://brownrisdgames.itch.io/enter"
+        icon: "fab fa-gamepad fa"
+      - title: "Github"
+        url: "https://github.com/Thuleanx/ENTER"
+        icon: "fab fa-fw fa-github"
+no_masthead: true
 ---
-  <!-- overlay_color: "#000" -->
-  <!-- overlay_filter: "0.1" -->
-  <!-- overlay_image: /assets/images/gameCaptures/enter/lookToPlatform.png -->
+
 Enter is a 2D Puzzle Platformer for PC and Mac, developed in Unity.
-As Co-Lead Programmer and VFX Artist, I was responsible for architecturing, developing, and refractoring the game's 
-systems and designing and implementing VFX.
+You play as a mouse pointer with the ability to right-click and copy paste elements of the game world.
+Your right-click window also serves as a physical object that can be used as platforms or roadblocks.
 
+As Co-Lead Programmer and VFX Artist, I was responsible for 
+designing, developing, and refractoring the game's systems,
+help other programmers get acquainted with Unity,
+and implementing VFX.
 
-{% include gallery id="gallery2" %}
+{% include showcase.html content="|![](/assets/images/gameCaptures/enter/pastePuzzle.gif)|![](/assets/images/gameCaptures/enter/laserChase.gif)|" %}
+{% include showcase.html content="|![](/assets/images/gameCaptures/enter/death.gif)|![](/assets/images/gameCaptures/enter/beginningSequence.gif)|" %}
 
-I mainly worked on the scene management system, glitch effect for the virus enemy, beginning sequence, 
-lazer interaction and other interactible objects.
-I also worked closely with the Audio Designer to add SFX and adaptive music to the game, as well as mentored
-programmers less familiar with Unity.
-
-{% include gallery id="gallery3" %}
-<!-- {% include figure image_path="/assets/images/gameCaptures/enter/death.gif" alt="gameplay image" %} -->
-{% include gallery %}
-
+----
 

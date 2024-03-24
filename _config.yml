@@ -18,22 +18,27 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-markdown: kramdown
-
+theme: jekyll-theme-so-simple
 title: Thuleanx
 name: An Nguyen
 email: thuleanx@tutanota.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A portfolio / blogging page for the game developer Thuleanx
+  Game developer | Graphics programmer 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: neuthalz
-github_username: thuleanx
 logo: "/assets/images/logo.png"
+mathjax:
+  enable: true
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+  - name: "Lora"
+    weights: "400,400i,700,700i"
+date_format: "%Y-%m-%d"
 
 # Build settings
-remote_theme: mmistakes/minimal-mistakes@4.24.0
-minimal_mistakes_skin: "dark"
+markdown: kramdown
+locale: en-US
 plugins:
   - jekyll-include-cache
   - jekyll-archives
@@ -64,26 +69,23 @@ include: ["_pages"]
 atom_feed:
   hide: true
 search: true
-breadcrumbs: true
 timezone: America/New_York
 
 author:
-  name     : "Thuleanx"
-  avatar   : "/assets/images/logo.jpg"
-  bio      : "My awesome biography constrained to a sentence or two goes here."
-  location : "Somewhere, USA"
+  name: "Thuleanx"
+  picture: "/assets/images/logo.png"
+  email: "thuleanx@tutanota.com"
 
-footer:
-  links:
-    - label: "Itch"
-      icon: "fab fa-brands fa-itch-io"
-      url: "https://thuleanx.itch.io/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/thuleanx"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/neuthalz"
+footer_links:
+  - title: "Itch"
+    url: "https://thuleanx.itch.io/"
+    icon: "fab fa fa-gamepad"
+  - title: "GitHub"
+    url: "https://github.com/thuleanx"
+    icon: "fab fa-fw fa-github"
+  - title: "Twitter"
+    url: "https://twitter.com/neuthalz"
+    icon: "fab fa-fw fa-twitter-square"
 
 defaults:
   # _posts
@@ -91,7 +93,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: post
       show_date: true
       date_format: "%Y-%m-%d"
   # _games
@@ -99,7 +101,7 @@ defaults:
       path: ""
       type: games
     values:
-      layout: single
+      layout: post
       author_profile: false
       classes: wide
   # _graphics
@@ -107,16 +109,16 @@ defaults:
       path: ""
       type: graphics
     values:
-      layout: single
+      layout: post
       author_profile: false
       classes: wide
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+# category_archive:
+#   type: liquid
+#   path: /categories/
+# tag_archive:
+#   type: liquid
+#   path: /tags/
 
 collections:
   graphics:

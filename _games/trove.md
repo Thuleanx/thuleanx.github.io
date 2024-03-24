@@ -1,27 +1,35 @@
 ---
+layout: post
 title: "Radioactive Trove"
-excerpt: "Atmospheric sidescroller"
-header:
-  teaser: /assets/images/gameCaptures/trove/battleCropped.gif
+image: 
+    thumbnail: /assets/images/gameCaptures/trove/battleCropped.gif
 sidebar:
-  - title: "Links"
-    image: "/assets/images/gameCaptures/trove/logo.png"
-    text: >-
-        [Itch.io](https://valkoy.itch.io/radioactive-trove) /
-        [Repository](https://github.com/Thuleanx/einclair/tree/main/Assets/Scripts)
-  - title: "Role"
-    text: "Programmer, Audio Designer"
-  - title: "Responsiblities"
-    text: >-
-        - Design and implement statemachine enemy AI, combat system, and level progression. 
+  - text: >-
+        - Enemy AI + combat system
 
-        - Write post processing effects in Shader Graph and HLSL. 
-        Designed and implement particle systems.
-        Modified URP lightning pass to get Darkwood vision cone.
+        - Post processing shaders in Shader Graph and HLSL
 
-        - Implement adaptive 3D audio with proper concurrency stealing.
-  - title: "Tools"
-    text: "Unity, FMOD Studio"
+        - Design and implemented VFX
+
+        - Modified URP Lighting pass to mimic Darkwood's vision cone
+
+        <hr>
+    image: /assets/images/gameCaptures/trove/logo.png
+  - text: >-
+
+        **Jam Project**<br>
+        **Team:** 2 <br>
+        **Tools:** Unity, FMOD<br>
+        **Duration:** 8 days<br>
+        **Platforms:** Webgl, Windows, Mac<br>
+    links:
+      - title: "Itch"
+        url: "https://valkoy.itch.io/radioactive-trove"
+        icon: "fab fa-gamepad fa"
+      - title: "Github"
+        url: "https://github.com/Thuleanx/einclair/tree/main/Assets/Scripts"
+        icon: "fab fa-fw fa-github"
+no_masthead: true
 
 setup:
   - url: /assets/images/gameCaptures/trove/titleCropped.gif

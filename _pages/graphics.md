@@ -1,10 +1,9 @@
 ---
-title: Graphics
 layout: collection
 permalink: /graphics/
 collection: graphics
 entries_layout: grid
-classes: wide
+show_excerpts: false
 
 graphics_row:
   - image_path: /assets/images/graphicsCaptures/inprograss/showcase.gif
@@ -42,6 +41,3 @@ graphics_row:
     btn_label: "Read More"
     btn_class: "btn--inverse"
 ---
-
-## Featured
-{% include feature_row %}

@@ -1,21 +1,13 @@
 ---
+layout: post
 title: "Portal Knight"
-excerpt: "3D isometric hack and slash"
-header:
-  teaser: /assets/images/gameCaptures/portal-knight/swordVFX.gif
+image:
+  thumbnail: /assets/images/gameCaptures/portal-knight/swordVFX.gif
 sidebar:
-  - title: "Links"
-    image: "/assets/images/gameCaptures/portal-knight/splash.png"
-    text: >-
-        [Itch.io](https://thuleanx.itch.io/portal-knight) /
-        [Repository](https://github.com/Thuleanx/PortalKnight)
-  - title: "Roles"
-    text: "Programmer, Audio Designer"
-  - title: "Responsiblities"
-    text: >-
+  - text: >-
         - Statemachine character controller
 
-        - Melee combat system + animation integration
+        - Melee combat system + animation
 
         - AI navigation with NavMesh
 
@@ -24,8 +16,24 @@ sidebar:
         - Audio integration with FMOD.
 
         - Portal and death particles with VFX Graph.
-  - title: "Tools"
-    text: "Unity, FMOD Studio"
+
+        <hr>
+    image: /assets/images/gameCaptures/portal-knight/splash.png
+  - text: >-
+
+        **Jam Project**<br>
+        **Team:** 2 <br>
+        **Tools:** Unity, FMOD<br>
+        **Duration:** 1 month<br>
+        **Platforms:** Webgl, Windows, Mac<br>
+    links:
+      - title: "Itch"
+        url: "https://thuleanx.itch.io/portal-knight"
+        icon: "fab fa-gamepad fa"
+      - title: "Github"
+        url: "https://github.com/Thuleanx/PortalKnight"
+        icon: "fab fa-fw fa-github"
+no_masthead: true
 
 gallery:
   - url: /assets/images/gameCaptures/portal-knight/initial_enter.png
@@ -52,6 +60,26 @@ screenWipeShaderTwirl:
 screenWipeShaderCombine:
   - url: /assets/images/gameCaptures/portal-knight/screenWipeShaderCombine.png
     image_path: /assets/images/gameCaptures/portal-knight/screenWipeShaderCombine.png
+    
+animation_row:
+  - image_path: /assets/images/gameCaptures/portal-knight/dashing.gif
+    title: "Dash"
+    excerpt: >-
+        Fawn's main movement / evasive option, which grants iframes and can be used
+        to cancel attacks and recovery animations.
+  - image_path: /assets/images/gameCaptures/portal-knight/attack.gif
+    title: "Attack"
+    excerpt: >-
+        Fawn has a two-combo attack that knocks enemies backwards.
+  - image_path: /assets/images/gameCaptures/portal-knight/swordVFX.gif
+    title: "Lightning"
+    excerpt: >-
+        Fawn charges light energy by hitting enemies, and 
+        can release it as a massive AOE attack.
+
+toc: true
+toc_sticky: true
+toc_label: "Featured Systems"
 
 ---
   <!-- overlay_color: "#000" -->
@@ -60,8 +88,8 @@ screenWipeShaderCombine:
 
 Portal Knight is a 3D isometric hack and slash game created by a team of 2 as a submission for 
 [A Game By Its Cover Jam](https://itch.io/jam/a-game-by-its-cover-2022/entries) 
-over the month of November 2022. 
-I was in charge of programming, audio, and part of the VFX.
+over the month of November 2022.
+I was in charge of programming, audio, and a portion of the VFX.
 
 {% include gallery %}
 {% include figure image_path="/assets/images/gameCaptures/portal-knight/longFight.gif" alt="gameplay image" %}
@@ -74,7 +102,7 @@ I developed a simple finite state machine that can be applied to player and AI.
 
 The statemachine is a component that features a list of states with events for entering, exiting, and update, as
 well as the ability for each state to specify a coroutine to run on entrance. 
-It lives on a separate assembly definition as the main game code, and is therefore portable to other projects and does not drag down compile time.
+The code lives in a separate assembly definition and does not contribute to compilation time.
 
 
 {::options parse_block_html="true" /}
@@ -149,13 +177,11 @@ public abstract class StateMachine<Agent> : MonoBehaviour {
 
 ![shadow-enemy-attack](/assets/images/gameCaptures/portal-knight/earlyRigZoom.gif){:.align-right}
 The following code is for the enemy's special attack that spawns multiple projectiles.
-It features a coroutine that gets run automatically by the State Machine.
-The coroutine responsible for waiting for the enemy's windup animation, 
-then spawning the projectiles, then waiting for a recovery.
+The state runs a coroutine that waits for the enemy's windup animation, 
+then spawning the projectiles, then waits for a recovery period.
 
 
 ```c++
-// ...
 public class ShadowAttackState : State<ShadowEnemy> {
     Timer onCooldown; // internal cooldown timer for attack
 
@@ -187,7 +213,7 @@ public class ShadowAttackState : State<ShadowEnemy> {
 
     public override IEnumerator Coroutine(ShadowEnemy monster) {
         monster.Drag = monster.deccelerationAlpha;
-        
+
         // monster windup animation happens here
         monster.Anim.SetTrigger(monster.attackTrigger);
         yield return monster.waitForTrigger();
@@ -208,8 +234,23 @@ public class ShadowAttackState : State<ShadowEnemy> {
         => (monster.transform.position - monster.player.transform.position).sqrMagnitude 
             <= monster.attackRange * monster.attackRange;
 }
-//...
 ```
+</details>
+{::options parse_block_html="false" /}
+
+## Character States and Animation
+
+I implemented all gameplay features for the main character Fawn, 
+alongside her animation state machine and its transitions.
+
+{% include feature_row id="animation_row" %}
+
+{::options parse_block_html="true" /}
+<details><summary markdown="span">State Machine - Animation </summary>
+
+The following 
+![shadow-enemy-attack](/assets/images/gameCaptures/portal-knight/earlyRigZoom.gif){:.align-right}
+
 </details>
 {::options parse_block_html="false" /}
 
@@ -218,17 +259,16 @@ public class ShadowAttackState : State<ShadowEnemy> {
 
 ![AI Move Slope](/assets/images/gameCaptures/portal-knight/playerWalkSlope.gif){:.align-right}
 Portal Knight's AI uses both a combination of two independent Unity's systems: Character Controller and Navigation mesh.
-The former deals with collisions with dynamic and static objects and is used for steering, while the later for pathfinding.
 I made the game's entities move while respecting both systems, and accurately adjust to slopes.
 
 Below is code snippet of movement inside of the Movable class, which both enemy and player agents inherit from.
+The code first adjusts the agent's velocity to the slope it's currently on, 
+then snap its next position to the closest nav mesh cell.
 
 {::options parse_block_html="true" /}
 <details><summary markdown="span">Code Snippet - Movement </summary>
 
 ```c++
-// ...
-
 /// Move agent by a displacement vector, respective slopes and 
 /// stay inside the navmesh when possible
 protected override void Move(Vector3 displacement) {
@@ -257,6 +297,8 @@ bool findClosestNavPoint(Vector3 pos, out Vector3 resPos) {
     return false;
 }
 
+// Apply slope friction if slope is not walkable. The returned value
+// is the velocity adjusted to the slope.
 protected Vector3 adjustVelocityToSlope(Vector3 velocity, float slopeLimit) {
     var ray = new Ray(transform.position + Vector3.down * STANDARD_RAY_DISTANCE, Vector3.down);
     RaycastHit hitGround;
@@ -275,8 +317,6 @@ protected Vector3 adjustVelocityToSlope(Vector3 velocity, float slopeLimit) {
 
     return velocity;
 }
-
-//...
 ```
 
 </details>
@@ -284,7 +324,6 @@ protected Vector3 adjustVelocityToSlope(Vector3 velocity, float slopeLimit) {
 
 ## Camera Occlusion System
 I implemented a system that occludes objects that obstructs the player's view.
-It works by creating a sphere mask around the player, and using that to determine the alpha clipping inside a fragment shader (with Unity's shader graph).
 
 {% include gallery id="occlusion" %}
 
@@ -303,21 +342,19 @@ pixels near the player's feet are not occluded.
 {::options parse_block_html="false" /}
 
 
+
 ## Death VFX
 ![death effect](/assets/images/gameCaptures/portal-knight/ingameDeathCropped.gif){:.align-right}
 With VFX Graph and Unity's shader graph, I designed and implemented VFX for death and screen wipe. 
 
-It roughly works as follows: 
-- When players health depletes, they get locked into the idle animation and dissolve away with a shader.
-- I added emission to the player and GPU-based particles are emitted on the player mesh's surface.
+- Lock player into the idle animation and dissolve away with a shader.
+- GPU-based particles are emitted on the player mesh's surface.
 - A material on a screen-wide texture is procedurally animated to produce the screen wipe effect with a shader and DoTween.
 
 {::options parse_block_html="true" /}
 <details><summary markdown="span">Shader Graph - Twirl Effect </summary>
 
 ![death effect](/assets/images/gameCaptures/portal-knight/deathVFXCropped.gif){:.align-left}
-The following are shader graph for the twirly death screen wipe. It first generates a sphere mask around the player as well
-as a twirling noise, then combining them and color.
 
 {::options parse_block_html="false" /}
 {% include figure image_path="/assets/images/gameCaptures/portal-knight/twirlMaskShader.png" 
@@ -337,11 +374,12 @@ The following is a snippet for code for screen wipe using DoTween.
 To animate the screen wipe, it manipulates parameters of a material of a 
 screen-wide overlayed image.
 ```c++
+/* Trigger death wipe effect. Should only be run if transitioning is false*/
 IEnumerator _deathWipe(string sceneName) {
     SetEnableWipeEffect(true);
     // zoom in to player
     currentTween = DOVirtual.Float(maxRange, focusRange, fadeOutDuration.x, 
-        (x) => SetMaskRange(x)).SetEase(easeFocus);
+        SetMaskRange).SetEase(easeFocus);
     yield return currentTween.WaitForCompletion();
     yield return new WaitForSeconds(focusWait);
     currentTween?.Kill();
@@ -349,14 +387,17 @@ IEnumerator _deathWipe(string sceneName) {
     // totally occlude screen
     float fadeOutDurationTail = fadeOutDuration.y - fadeOutDuration.x;
     currentTween = DOVirtual.Float(focusRange, minRange, fadeOutDurationTail,
-        (x) => SetMaskRange(x)).SetEase(easeOut);
+        SetMaskRange).SetEase(easeOut);
     yield return currentTween.WaitForCompletion();
     App.instance.RequestLoad(sceneName);
     transitioning = false;	
 }
 
+/* Set spherical cutout range. */
 public void SetMaskRange(float value) => BlockoutImage.material.SetFloat("_Radius", value);
-public void SetEnableWipeEffect(bool value) => BlockoutImage.material.SetFloat("_Enabled", value ? 1 : 0);
+
+/* Use to enable/disable the effect. */
+public void SetEnableWipeEffect(bool enabled) => BlockoutImage.material.SetFloat("_Enabled", enabled ? 1 : 0);
 ```
 </details>
 {::options parse_block_html="false" /}
