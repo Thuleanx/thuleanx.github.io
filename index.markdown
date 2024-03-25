@@ -14,23 +14,19 @@ feature_row:
     url: "/games/ghost-nirvana"
     image: 
         thumbnail: /assets/images/gameCaptures/ghost-nirvana/many_enemies.gif
-  - title: "Procedural Grass"
+  - title: "DOOMolish"
     excerpt: >-
-      <span style="pointer-events: none" class="btn btn--danger">C++</span>
-      <span style="pointer-events: none" class="btn btn--success">OpenGL</span>
-      <br>
-    
-      GPU-based Interactive Procedural Grass using compute shader.
-    url: "/graphics/inprograss"
+      Custom Vulkan engine in Rust with Bevy_ECS for a solo 14 day game jam.
+    url: "/games/doomolish"
     image: 
-        thumbnail: /assets/images/graphicsCaptures/inprograss/showcase.gif
+        thumbnail: /assets/images/gameCaptures/doomolish/round2.gif
   - title: "Procedural Grass"
     excerpt: >-
-      <span style="pointer-events: none" class="btn btn--danger">C++</span>
-      <span style="pointer-events: none" class="btn btn--success">OpenGL</span>
-      <br>
+      <!-- <span style="pointer-events: none" class="btn btn--danger">C++</span> -->
+      <!-- <span style="pointer-events: none" class="btn btn--success">OpenGL</span> -->
+      <!-- <br> -->
     
-      GPU-based Interactive Procedural Grass using compute shader.
+      GPU-based Interactive Procedural Grass using compute shader in C++ and OpenGL.
     url: "/graphics/inprograss"
     image: 
         thumbnail: /assets/images/graphicsCaptures/inprograss/showcase.gif
