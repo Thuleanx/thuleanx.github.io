@@ -29,12 +29,17 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "/assets/images/logo.png"
 mathjax:
   enable: true
+  combo: "tex-svg"
+  tags: "ams"
 google_fonts:
   - name: "Source Sans Pro"
     weights: "400,400i,700,700i"
   - name: "Lora"
     weights: "400,400i,700,700i"
+read_time: false
+words_per_minute: 200
 date_format: "%Y-%m-%d"
+skin: "/assets/css/skins/dark.css"
 
 # Build settings
 markdown: kramdown
