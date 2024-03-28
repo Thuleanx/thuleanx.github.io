@@ -187,4 +187,29 @@ The key is to have line segment borrow the circle's radius, effectively turning 
 
 We can capture collisions with the top and bottom of the capsule with the algorithm we developed for case 2.
 For the midsection, we can use the fact that a point $\vec{P}$ is distance $d$ away from a line segment $\vec{pq}$ 
-if the paralellogram defined by $\vec{P}$, $\vec{p}$, and $\vec{q}$ has the same area as the rectangle
+if the paralellogram defined by $\vec{P}$, $\vec{p}$, and $\vec{q}$ has the same area as the rectangle 
+formed by $\vec{p}$, $\vec{q}$, and the normal vector to $\vec{pq}$ with length $d$.
+
+This gives us the following equality:
+
+$$
+\begin{align}
+    |(\vec{d} - \vec{c}) \times (\vec{p} + \vec{v} t - \vec{c})| &= C |\vec{q} - \vec{p}| \\
+    \Rightarrow |(\vec{d} - \vec{c}) \times (\vec{p} - \vec{c}) + \vec{v} t)|^2 &= C |\vec{q} - \vec{p}|^2 \\
+    \Rightarrow |(\vec{d} - \vec{c}) \times (\vec{p} - \vec{c}) + (\vec{d} - \vec{c}) \times \vec{v}t|^2 &= C |\vec{q} - \vec{p}|^2 & (\text{distributive cross product}) \\
+\end{align}
+$$
+
+Which can be solved with quadratic formula yet again costing only 1 square root operation with:
+
+$$
+\begin{align}
+    a &= [(\vec{d} - \vec{c}) \times \vec{v}]^2 \\
+    b &= 2 [(\vec{d} - \vec{c}) \times (\vec{p} - \vec{c})] ((\vec{d} - \vec{c}) \times \vec{v}) \\
+    c &= [(\vec{d} - \vec{c}) \times (\vec{p} - \vec{c})]^2 - C |\vec{q} - \vec{p}|^2
+\end{align}
+$$
+
+This only gives you values for $t$ where the circle collides with the line $\vec{pq}$, but we need to find collisions only with the line segment from $\vec{p}$ to $\vec{q}$.
+One way is to compute the point $\vec{P} = \vec{v} t + \vec{p}$, then project it onto the line $\vec{pq}$ and check if it is between $\vec{p}$ and $\vec{q}$.
+Since the three points are colinear, we can use the sign of the dot product $(\vec{p} - \vec{P}) \cdot (\vec{q} - \vec{P})$.
