@@ -43,7 +43,7 @@ gallery1:
 
 Doomolish is my solo Doom-inspired pixel fps made over the course of a 2 week game jam.
 The game was made with my Vulkan engine written in rust over the same time duration, baring some Vulkan boilerplate.
-With this entry, I set out to create a minimal game from scratch by myself, from engine to art to music.
+With this entry, I set out to create a game from scratch by myself, from engine to modeling, spritework, and music.
 
 {% include gallery id="gallery1" %}
 

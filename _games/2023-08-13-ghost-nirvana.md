@@ -5,27 +5,29 @@ image:
     thumbnail: /assets/images/gameCaptures/ghost-nirvana/many_enemies.gif
 sidebar:
   - text: >-
-        - Finite state machine AI with transition interrupts
-
-        - Object pooling for projectile system
-
-        - Decoupled combat, UI, and upgrade system with scriptable objects
-
-        - FMOD Audio mixing and concurrency settings
-
-        - A leaderboard system
-
-        - UI tweening
-
-        <hr>
-    image: /assets/images/gameCaptures/ghost-nirvana/title.png
-  - text: >-
 
         **Jam Project**<br>
         **Team:** 2 <br>
         **Tools:** Unity, FMOD<br>
         **Duration:** 6 weeks<br>
         **Platforms:** Webgl, Windows, Mac<br>
+
+        <hr>
+    image: /assets/images/gameCaptures/ghost-nirvana/title.png
+  - text: >-
+        - **Object pooling system** to handle hundreds of bullets running stably on Webgl
+
+        - **Decoupled combat, UI, and upgrade system** with the MVVM pattern using scriptable objects
+
+        - AI with Finite State Machine
+
+        - FMOD Audio mixing and concurrency settings
+
+        - **Online leaderboard system**
+
+        - UI tweening
+
+        <hr>
     links:
       - title: "Itch"
         url: "https://thuleanx.itch.io/ghost-nirvana"
@@ -50,12 +52,38 @@ gallery3:
 
 ---
 
+Ghost Nirvana is a 3D roguelike bullet heaven I developed alongside [Allison Yeh](https://allisonkyeh.com/) for A Game By Its Cover 2023, a 6 week game jam.
+You play as a part-time worker for a salt company whose job is exorcising ghosts haunting abandoned appliances.
+
+
 {% include gallery id="gallery1" %}
 {% include gallery id="gallery2" %}
-
-Ghost Nirvana is a 3D roguelike bullet heaven I developed alongside Allison for A Game By Its Cover 2023, a 6 week game jam.
-
 {% include gallery id="gallery3" %}
+
+<!-- ## Code Snippets -->
+
+<!-- {::options parse_block_html="true" /} -->
+
+<!-- <details><summary markdown="span">Decoupled combat, UI, and upgrade system</summary> -->
+
+<!-- The Model View View-Model pattern is famous in software for decoupling front end --> 
+<!-- UI and the logic that updates said UI. -->
+<!-- The core idea is that systems communicates data through a View-Model, which is just a --> 
+<!-- fancy name for a collection of data with delegates that fires when specific pieces of the --> 
+<!-- data updates. -->
+
+<!-- Inspired by [a Unity article on scriptable objects](https://unity.com/how-to/architect-game-code-scriptable-objects), --> 
+<!-- I made a similar system in Unity for handling information that Ghost Nirvana's combat, --> 
+<!-- UI, AI, and upgrade systems use. -->
+
+<!-- ```csharp -->
+
+<!-- ``` -->
+
+<!-- </details> -->
+
+<!-- {::options parse_block_html="false" /} -->
+
 
 ----
 
