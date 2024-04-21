@@ -12,7 +12,8 @@ and Bevy ECS for a 2 week game jam.
 
 # Setup
 
-For this Jam, I needed to detect and resolve collisions between roughly potentially many entities and a static environment with hallways and rooms.
+For this Jam, I needed to detect and resolve collisions between a lot of entities 
+and a static environment of hallways and rooms.
 
 3D collisions were out of the table. 
 I didn't want to spend the entire two weeks on debugging if something had gone wrong.
@@ -140,7 +141,7 @@ If you are careful, it is possible to do this without using any square root oper
 Case (1) can actually be reduced to an instance of case (2). 
 If we have two moving circles $A$ and $B$, then the time $t$ at which $A$ and $B$ collides is the same as that of a collision 
 between $C$, a point moving at $A$ and $B$'s combined velocity, and $D$, a static circle of $A$ and $B$'s combined radius.
-Therefore, let us focus on the cases (2) and (3). Below, I outlined my solution which uses 1 square root operation for case (2) and 3 for case (3).
+Therefore, let us focus on the cases (2) and (3). Below, I outlined my solution which uses 1 square root operation for case (2) and (3).
 
 # Case 2: Circle Point Collision
 

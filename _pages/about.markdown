@@ -3,9 +3,9 @@ layout: about
 permalink: /about/
 ---
 
-Hi. I'm An Nguyen / Thuleanx, a gameplay and graphics programmer.
+Hi. I'm An Nguyen, a gameplay and graphics programmer.
 
-I'm currently working at Heavy Iron Studios as a Game Programmer, helping studio clients with gameplay 
+I'm currently working at Heavy Iron Studios as a Game Programmer, helping clients with gameplay 
 prototyping and performance optimization for PC and Quest.
 
 I love turning programming into a tool for creative expression and interactive storytelling. 

@@ -128,3 +128,9 @@ figcaption {
     transition: $global-transition;
   }
 }
+
+ul {
+    // list-style-position: inside;
+    padding-left: 0px;
+    margin-left: 0px;
+}
