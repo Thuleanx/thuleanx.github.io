@@ -14,7 +14,7 @@ sidebar:
         <hr>
     image: /assets/images/gameCaptures/doomolish/logo.png
   - text: >-
-        - **Vulkan renderer** in rust with vulkanalia and winit
+        - **Vulkan renderer** in Rust with vulkanalia and winit
 
         - 2D **continuous collision detection** supporting circles and line segments
 
@@ -42,7 +42,7 @@ gallery1:
 ---
 
 Doomolish is my solo Doom-inspired pixel fps made over the course of a 2 week game jam.
-The game was made with my Vulkan engine written in rust over the same time duration, baring some Vulkan boilerplate.
+The game was made with my Vulkan engine written in Rust over the same time duration, baring some Vulkan boilerplate.
 With this entry, I set out to create a game from scratch by myself, from engine to modeling, spritework, and music.
 
 {% include gallery id="gallery1" %}

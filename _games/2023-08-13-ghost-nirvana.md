@@ -10,12 +10,12 @@ sidebar:
         **Team:** 2 <br>
         **Tools:** Unity, FMOD<br>
         **Duration:** 6 weeks<br>
-        **Platforms:** Webgl, Windows, Mac<br>
+        **Platforms:** WebGL, Windows, Mac<br>
 
         <hr>
     image: /assets/images/gameCaptures/ghost-nirvana/title.png
   - text: >-
-        - **Object pooling system** to handle hundreds of bullets running stably on Webgl
+        - **Object pooling system** to handle hundreds of bullets running stably on WebGL
 
         - **Decoupled combat, UI, and upgrade system** with the MVVM pattern using scriptable objects
 

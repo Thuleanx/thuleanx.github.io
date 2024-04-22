@@ -13,9 +13,9 @@ sidebar:
 
         - Camera occlusion system, screenspace outline, and screenwipe
 
-        - Audio integration with FMOD.
+        - Audio integration with FMOD
 
-        - Portal and death particles with VFX Graph.
+        - Portal and death particles with VFX Graph
 
         <hr>
     image: /assets/images/gameCaptures/portal-knight/splash.png

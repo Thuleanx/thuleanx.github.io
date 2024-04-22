@@ -26,7 +26,7 @@ feature_row:
       <!-- <span style="pointer-events: none" class="btn btn--success">OpenGL</span> -->
       <!-- <br> -->
     
-      GPU-based Interactive Procedural Grass using compute shader in C++ and OpenGL
+      GPU-based Interactive Procedural Grass using compute shaders in C++ and OpenGL
     url: "/graphics/inprograss"
     image: 
         thumbnail: /assets/images/graphicsCaptures/inprograss/showcase.gif
