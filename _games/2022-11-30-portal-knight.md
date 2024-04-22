@@ -62,22 +62,6 @@ screenWipeShaderCombine:
   - url: /assets/images/gameCaptures/portal-knight/screenWipeShaderCombine.png
     image_path: /assets/images/gameCaptures/portal-knight/screenWipeShaderCombine.png
     
-animation_row:
-  - image_path: /assets/images/gameCaptures/portal-knight/dashing.gif
-    title: "Dash"
-    excerpt: >-
-        Fawn's main movement / evasive option, which grants iframes and can be used
-        to cancel attacks and recovery animations.
-  - image_path: /assets/images/gameCaptures/portal-knight/attack.gif
-    title: "Attack"
-    excerpt: >-
-        Fawn has a two-combo attack that knocks enemies backwards.
-  - image_path: /assets/images/gameCaptures/portal-knight/swordVFX.gif
-    title: "Lightning"
-    excerpt: >-
-        Fawn charges light energy by hitting enemies, and 
-        can release it as a massive AOE attack.
-
 toc: true
 toc_sticky: true
 toc_label: "Featured Systems"
@@ -95,6 +79,7 @@ I was in charge of programming, audio, and a portion of the VFX.
 {% include gallery %}
 {% include figure image_path="/assets/images/gameCaptures/portal-knight/longFight.gif" alt="gameplay image" %}
 
+<br>
 
 ## State Machine (for players and enemies)
 
@@ -175,7 +160,6 @@ public abstract class StateMachine<Agent> : MonoBehaviour {
 
 
 <details><summary markdown="span">Code Snippet - Enemy Shoot Projectile </summary>
-
 ![shadow-enemy-attack](/assets/images/gameCaptures/portal-knight/earlyRigZoom.gif){:.align-right}
 The following code is for the enemy's special attack that spawns multiple projectiles.
 The state runs a coroutine that waits for the enemy's windup animation, 
@@ -239,22 +223,19 @@ public class ShadowAttackState : State<ShadowEnemy> {
 </details>
 {::options parse_block_html="false" /}
 
+<br>
+
 ## Character States and Animation
 
 I implemented all gameplay features for the main character Fawn, 
 alongside her animation state machine and its transitions.
 
-{% include feature_row id="animation_row" %}
+| Dash | Attack | Special |
+| --- | --- | --- |
+| ![dash_animation](/assets/images/gameCaptures/portal-knight/dashing.gif) | ![dash_animation](/assets/images/gameCaptures/portal-knight/attack.gif) |![dash_animation](/assets/images/gameCaptures/portal-knight/swordVFX.gif) |
+| Fawn's main movement / evasive option, which grants iframes and can be used to cancel attacks and recovery animations. | Fawn has a two-combo attack that knocks enemies backwards. |  Fawn charges light energy by hitting enemies, and can release it as a massive AOE attack. |
 
-{::options parse_block_html="true" /}
-<details><summary markdown="span">State Machine - Animation </summary>
-
-The following 
-![shadow-enemy-attack](/assets/images/gameCaptures/portal-knight/earlyRigZoom.gif){:.align-right}
-
-</details>
-{::options parse_block_html="false" /}
-
+<br>
 
 ## Navigation with NavMesh
 
@@ -323,6 +304,8 @@ protected Vector3 adjustVelocityToSlope(Vector3 velocity, float slopeLimit) {
 </details>
 {::options parse_block_html="false" /}
 
+<br>
+
 ## Camera Occlusion System
 I implemented a system that occludes objects that obstructs the player's view.
 
@@ -342,7 +325,7 @@ pixels near the player's feet are not occluded.
 </details>
 {::options parse_block_html="false" /}
 
-
+<br>
 
 ## Death VFX
 ![death effect](/assets/images/gameCaptures/portal-knight/ingameDeathCropped.gif){:.align-right}
@@ -366,9 +349,7 @@ caption="Shader Graph for coloring twirl and combining with sphere mask."%}
 {::options parse_block_html="true" /}
 
 </details>
-{::options parse_block_html="false" /}
 
-{::options parse_block_html="true" /}
 <details><summary markdown="span">Code Snippet - Twirl Effect </summary>
 
 The following is a snippet for code for screen wipe using DoTween. 

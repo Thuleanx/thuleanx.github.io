@@ -55,7 +55,6 @@ gallery3:
 Ghost Nirvana is a 3D roguelike bullet heaven I developed alongside [Allison Yeh](https://allisonkyeh.com/) for A Game By Its Cover 2023, a 6 week game jam.
 You play as a part-time worker for a salt company whose job is exorcising ghosts haunting abandoned appliances.
 
-
 {% include gallery id="gallery1" %}
 {% include gallery id="gallery2" %}
 {% include gallery id="gallery3" %}

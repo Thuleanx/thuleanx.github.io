@@ -9,14 +9,14 @@ show_excerpts: true
 feature_row:
   - title: "Ghost Nirvana"
     excerpt: >-
-        3D isometric bullet heaven developed in 6 weeks with a team of 2.
+        3D isometric bullet heaven developed Unity for a 6 weeks
 
     url: "/games/ghost-nirvana"
     image: 
         thumbnail: /assets/images/gameCaptures/ghost-nirvana/many_enemies.gif
   - title: "DOOMolish"
     excerpt: >-
-      Custom Vulkan engine in Rust with Bevy_ECS for a solo 14 day game jam.
+      Doom clone made with Vulkan, rust, and bevy_ecs for a solo 14 day game jam
     url: "/games/doomolish"
     image: 
         thumbnail: /assets/images/gameCaptures/doomolish/round2.gif
