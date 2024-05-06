@@ -60,16 +60,13 @@ since I had to restrict mutable access to the graphics layer as much as possible
 
 # Code Snippets
 
-{::options parse_block_html="true" /}
+Below are some code snippets of the engine.
 
-<details><summary markdown="span">Continuous collision detection</summary>
-
+## Continous Collision Detection
 I've written a blog detailing the derivation of Doomolish's collision detection 
 [here](/math/continuous-collision/2024/03/24/doomolish-collision-detection.html).
-It supports 2D continuous collision between static line-segments and dynamic circles, 
-and boils down two functions, each using only 1 square root operation.
-All the math also generalizes to 3D, allowing for fast continuous collision detection 
-between ellipsoids and triangle.
+It supports **2D continuous collision** between static line-segments and dynamic circles, 
+and boils down two functions, each using only **1 square root operation**.
 
 ```rust
 fn penetration_time_circle_line(
@@ -138,45 +135,7 @@ fn penetration_time_circle_line(
 }
 ```
 
-```rust
-fn penetration_time_circle_point(
-    circle: Circle, 
-    point: Vector2<f32>, 
-    direction: Vector2<f32>
-) -> Option<f32> {
-
-    let circle_to_point = point - circle.position;
-
-    // We ignore collisions if ray goes away from circle
-    if cgmath::dot(circle_to_point, direction) <= 0.0 {
-        return None;
-    }
-
-    if circle_to_point.magnitude2() <= circle.radius * circle.radius {
-        return Some(0.0);
-    }
-
-    let quadratic_formula_a = cgmath::dot(direction, direction);
-    let quadratic_formula_b = -2.0 * cgmath::dot(direction, circle_to_point);
-    let quadratic_formula_c =
-        cgmath::dot(circle_to_point, circle_to_point) - circle.radius * circle.radius;
-
-    let quadratic_solutions = saga_utils::solve_quadratic(
-        quadratic_formula_a,
-        quadratic_formula_b,
-        quadratic_formula_c,
-    );
-
-    if let Ok(quadratic_solutions) = quadratic_solutions {
-        return quadratic_solutions.iter().cloned().find(|&t| t >= 0.0);
-    }
-
-    None
-}
-```
-</details>
-
-<details><summary markdown="span">Camera system</summary>
+## Camera System
 
 Below is my implementation of DOOMolish's camera system with strafe tilting and
 camera shake.
@@ -249,9 +208,7 @@ fn system_animate_camera(
 }
 ```
 
-</details>
-
-<details><summary markdown="span">Health system</summary>
+## Health System
 
 Applying damage and registering death are event-driven, meaning other systems 
 need not have mutable access to Health to apply a damaging effect.
@@ -355,11 +312,7 @@ fn system_on_entity_death(
         );
     rebuild_command_writer.send(RebuildCommand);
 }
-
 ```
-</details>
-
-{::options parse_block_html="false" /}
 
 ----
 

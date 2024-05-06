@@ -21,6 +21,10 @@ blockquote {
   border-left-color: $accent-color;
 }
 
+div.highlighter-rouge {
+  border-color: $border-color;
+}
+
 /* ==========================================================================
    Site-wide
    ========================================================================== */
@@ -149,6 +153,7 @@ blockquote {
 .search-input {
   border-color: $border-color;
 }
+
 
 /* ==========================================================================
    Page

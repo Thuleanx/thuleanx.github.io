@@ -36,6 +36,10 @@ google_fonts:
     weights: "400,400i,700,700i"
   - name: "Lora"
     weights: "400,400i,700,700i"
+  - name: "Barlow"
+    weights: "400,400i,700,700i"
+  - name: "Prata"
+    weights: "400,400i,700,700i"
 read_time: false
 words_per_minute: 200
 date_format: "%Y-%m-%d"
@@ -44,6 +48,10 @@ skin: "/assets/css/skins/dark.css"
 # Build settings
 markdown: kramdown
 locale: en-US
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 plugins:
   - jekyll-include-cache
   - jekyll-archives

@@ -25,8 +25,8 @@
   margin-bottom: 0.5rem;
   font-family: $title-font-family;
   font-weight: $entry-title-weight;
-  font-style: italic;
   letter-spacing: -1px;
+  font-style: italic;
   word-wrap: break-word; /* break long words that could overflow */
 
   a {
@@ -48,7 +48,9 @@
   -ms-flex-order: -1;
   order: -1;
   width: 100%;
-  margin-bottom: 0.5rem;
+  height: 10rem;
+  margin-bottom: 1rem;
+  object-fit: cover;
 }
 
 .entry-meta {
@@ -138,6 +140,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 2em;
+  padding-bottom: 2rem;
 
   .entry {
     display: -webkit-box;
@@ -147,7 +150,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-bottom: 2rem;
+    // padding-bottom: 2rem;
   }
 
   .entry-title {
