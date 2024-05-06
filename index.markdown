@@ -9,7 +9,7 @@ show_excerpts: true
 feature_row:
   - title: "Ghost Nirvana"
     excerpt: >-
-        3D isometric bullet heaven developed in Unity for a 6 weeks
+        3D isometric bullet heaven developed in Unity over 6 weeks.
 
     url: "/games/ghost-nirvana"
     image: 
