@@ -25,6 +25,10 @@ div.highlighter-rouge {
   border-color: $border-color;
 }
 
+code.highlighter-rouge {
+  border-color: $border-color;
+}
+
 /* ==========================================================================
    Site-wide
    ========================================================================== */
@@ -36,9 +40,9 @@ div.highlighter-rouge {
 }
 
 .copyright {
-  color: lighten($text-color, 25%);
+  color: $text-color;
   a {
-    color: lighten($text-color, 25%);
+    color: $text-color;
   }
 }
 

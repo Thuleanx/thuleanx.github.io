@@ -15,7 +15,7 @@ sidebar:
         <hr>
     image: "/assets/images/graphicsCaptures/inprograss/palette4alt.png"
   - text: >-
-        - GLSL compute shader generates **100,000+ curved grass meshes**
+        - GLSL compute shader generates **1 million curved grass meshes**
 
         - GLSL compute shader to draw to a packed velocity / displacement texture
         that governs how much **grass sways**
@@ -36,7 +36,7 @@ no_masthead: true
   <!-- overlay_image: /assets/images/graphicsCaptures/inprograss/banner.png -->
 
 Inprograss is a realtime grass generator I created as my week-long final project for Brown's computer graphics class.
-All the grass are generated using a compute shader and lives entirely on the GPU, which allows for 10 million unique blades of grass to be 
+All the grass are generated using a compute shader and lives entirely on the GPU, which allows for 1 million unique blades of grass to be 
 generated and rendered without dips in frame rate.
 
 I've seen others achieved this before, so to take it a step further I also added 
