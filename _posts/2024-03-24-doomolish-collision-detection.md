@@ -3,6 +3,8 @@ layout: page
 title:  "2D Continuous Collision Detection"
 categories: math continuous-collision
 excerpt: Fast circle line-segment collision for [DOOMolish](/games/doomolish)
+image: 
+    thumbnail: /assets/images/gameCaptures/doomolish/round2.gif
 no_masthead: true
 ---
 
