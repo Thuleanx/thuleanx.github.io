@@ -18,10 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-remote_theme: mmistakes/so-simple-theme
-title: Thuleanx
-name: An Nguyen
-email: thuleanx@tutanota.com
+title:    Thuleanx
+name:     An Nguyen
+email:    thuleanx@tutanota.com
 description: >- # this means to ignore newlines until "baseurl:"
   Game developer | Graphics programmer 
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -31,19 +30,13 @@ mathjax:
   enable: true
   combo: "tex-svg"
   tags: "ams"
-google_fonts:
-  - name: "Source Sans Pro"
-    weights: "400,400i,700,700i"
-  - name: "Lora"
-    weights: "400,400i,700,700i"
-  - name: "Barlow"
-    weights: "400,400i,700,700i"
-  - name: "Prata"
-    weights: "400,400i,700,700i"
-read_time: false
-words_per_minute: 200
 date_format: "%Y-%m-%d"
-skin: "/assets/css/skins/custom.css"
+permalink:           pretty
+paginate:            5
+paginate_path:       /blog/:num
+
+blog:
+  truncated_preview: true
 
 # Build settings
 markdown: kramdown
@@ -55,8 +48,14 @@ kramdown:
 plugins:
   - jekyll-include-cache
   - jekyll-archives
+  - jekyll-email-protect
+  - jekyll-coffeescript
+  - jekyll-paginate
 
 include: ["_pages"]
+
+collections:
+  
 
 
 # Exclude from processing.
@@ -66,39 +65,30 @@ include: ["_pages"]
 #
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-atom_feed:
-  hide: true
-search: true
-timezone: America/New_York
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 author:
   name: "Thuleanx"
   picture: "/assets/images/logo.png"
   email: "thuleanx@tutanota.com"
 
-footer_links:
-  - title: "Itch"
-    url: "https://thuleanx.itch.io/"
-    icon: "fab fa fa-gamepad"
-  - title: "GitHub"
-    url: "https://github.com/thuleanx"
-    icon: "fab fa-fw fa-github"
-  - title: "Twitter"
-    url: "https://twitter.com/neuthalz"
-    icon: "fab fa-fw fa-twitter-square"
+collections:
+  graphics:
+    output: true
+    permalink: /:collection/:path/
+  games:
+    output: true
+    permalink: /:collection/:path/
 
 defaults:
   # _posts
@@ -115,28 +105,9 @@ defaults:
       type: games
     values:
       layout: post
-      author_profile: false
-      classes: wide
   # _graphics
   - scope:
       path: ""
       type: graphics
     values:
       layout: post
-      author_profile: false
-      classes: wide
-
-# category_archive:
-#   type: liquid
-#   path: /categories/
-# tag_archive:
-#   type: liquid
-#   path: /tags/
-
-collections:
-  graphics:
-    output: true
-    permalink: /:collection/:path/
-  games:
-    output: true
-    permalink: /:collection/:path/

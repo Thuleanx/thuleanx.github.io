@@ -4,7 +4,7 @@ title: "Portal Knight"
 image:
   thumbnail: /assets/images/gameCaptures/portal-knight/swordVFX.gif
 sidebar:
-  - text: >-
+    text: >-
         - Statemachine character controller
 
         - Melee combat system + animation
@@ -17,22 +17,17 @@ sidebar:
 
         - Portal and death particles with VFX Graph
 
-        <hr>
     image: /assets/images/gameCaptures/portal-knight/splash.png
-  - text: >-
-
-        **Jam Project**<br>
-        **Team:** 2 <br>
-        **Tools:** Unity, FMOD<br>
-        **Duration:** 1 month<br>
-        **Platforms:** Webgl, Windows, Mac<br>
+    team: 2
+    tools: Unity, FMOD, Yarn Spinner
+    platforms: Webgl, Windows, Mac
     links:
       - title: "Itch"
         url: "https://thuleanx.itch.io/portal-knight"
         icon: "fab fa-gamepad fa"
       - title: "Github"
         url: "https://github.com/Thuleanx/PortalKnight"
-        icon: "fab fa-fw fa-github"
+        icon: "fa fa-github-alt"
 permalink: /games/portal-knight/
 no_masthead: true
 
@@ -70,7 +65,6 @@ toc_label: "Featured Systems"
   <!-- overlay_color: "#000" -->
   <!-- overlay_filter: "0.1" -->
   <!-- overlay_image: /assets/images/gameCaptures/portal-knight/bannerv5.png -->
-
 Portal Knight is a 3D isometric hack and slash game created by a team of 2 as a submission for 
 [A Game By Its Cover Jam](https://itch.io/jam/a-game-by-its-cover-2022/entries) 
 over the month of November 2022.

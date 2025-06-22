@@ -2,19 +2,30 @@
 image:
   thumbnail: /assets/images/gameCaptures/magic-muralist/icon.gif
 sidebar:
-  - title: "Links"
-    image: "/assets/images/gameCaptures/magic-muralist/logo.png"
+    image: "/assets/images/gameCaptures/magic-muralist/painting5.png"
     text: >-
-        [Itch.io](https://valkoy.itch.io/magic-muralist) /
-        [Repository](https://github.com/Thuleanx/GMTK2022/tree/main/GMTK22/Assets/Scripts)
-  - title: "Role"
-    text: "Sole Programmer"
-  - title: "Responsiblities"
-    text: >-
-        Develop, prototype, and implement gameplay systems.
-        This includes dialogue, drawing mechanic, drawing request encounters, and sound integration.
-  - title: "Tools"
-    text: "Unity, FMOD Studio, Aseprite"
+        - Prototype main mechanic of blitting particle collisions 
+        onto a render texture
+
+        - Implement shader to draw colored texture over original painting
+
+        - Developed quest and conversation system
+
+        - Designed and programmed system for evaluating how close a painting is 
+        to desired colors by a least squared error approach
+
+        - Implement sounds with FMOD
+    team: 3
+    tools: Unity, FMOD Studio
+    duration: 3 days
+    platforms: WebGL, Windows, Mac
+    links:
+      - title: "Itch"
+        url: "https://valkoy.itch.io/magic-muralist"
+        icon: "fab fa-gamepad fa"
+      - title: "Github"
+        url: "https://github.com/Thuleanx/GMTK2022/tree/main/GMTK22/Assets/Scripts"
+        icon: "fa fa-github-alt"
 permalink: /games/magic-muralist/
 no_masthead: true
 

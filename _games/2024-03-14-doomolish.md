@@ -2,36 +2,29 @@
 layout: post
 title: "Doomolish"
 image: 
-    thumbnail: /assets/images/gameCaptures/doomolish/round2.gif
+    thumbnail: /assets/images/gameCaptures/doomolish/thumbnail.gif
 sidebar:
-  - text: >-
-
-        **Jam Project**<br>
-        **Tools:** Rust, Vulkan, Bevy_ecs, Blender, Aseprite, Jummbus<br>
-        **Duration:** 2 weeks<br>
-        **Platforms:** Windows<br>
-
-        <hr>
+    tools: Rust, Vulkan, Bevy_ecs, Blender, Aseprite, Jummbus
+    duration: 2 weeks
+    platform: Windows
     image: /assets/images/gameCaptures/doomolish/logo.png
-  - text: >-
-        - **Vulkan renderer** in Rust with vulkanalia and winit
+    text: >-
+        - Vulkan renderer in Rust with vulkanalia and winit
 
-        - 2D **continuous collision detection** supporting circles and line segments
+        - 2D continuous collision detection supporting circles and line segments
 
-        - Integration with **Bevy ECS**
+        - Integration with Bevy ECS
 
         - Camera controller, input manager, and simple enemy AI
 
-        - **Audio manager with Kira**
-
-        <hr>
+        - Audio manager with Kira
     links:
       - title: "Itch"
         url: "https://thuleanx.itch.io/doomolish"
         icon: "fab fa-gamepad fa"
       - title: "Github"
         url: "https://github.com/Thuleanx/Saga"
-        icon: "fab fa-fw fa-github"
+        icon: "fa fa-fw fa-github-alt"
 permalink: /games/doomolish/
 no_masthead: true
 

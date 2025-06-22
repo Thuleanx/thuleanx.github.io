@@ -1,30 +1,24 @@
 ---
 layout: post
 permalink: /graphics/inprograss/
-title: "Inprograss"
+title: "Procedural Grass"
 excerpt: "Interactive Procedural Grass"
 image:
   thumbnail: /assets/images/graphicsCaptures/inprograss/showcase.gif
 sidebar:
-  - text: >-
-        **Personal project**<br>
-        **Tools:** C++, OpenGL, Qt Creator<br>
-        **Duration:** 1 week<br>
-        **Platform:** Windows<br>
-
-        <hr>
+    tools: C++, OpenGL, Qt Creator
+    duration: 1 week
+    platform: Windows
     image: "/assets/images/graphicsCaptures/inprograss/palette4alt.png"
-  - text: >-
-        - GLSL compute shader generates **1 million curved grass meshes**
+    text: >-
+        - GLSL compute shader generates 1 million curved grass meshes
 
         - GLSL compute shader to draw to a packed velocity / displacement texture
-        that governs how much **grass sways**
+        that governs how much grass sways
 
-        - **Post processing FXAA** to remove jagged artifacts on the top of grass blades
+        - Post processing FXAA to remove jagged artifacts on the top of grass blades
 
-        - **3rd person camera controller**
-
-        <hr>
+        - 3rd person camera controller
     links:
       - title: "Github"
         url: "https://github.com/Thuleanx/Grass"

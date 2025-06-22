@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include head.html %}
+
+    <body>
+        <nav class="nav-main">
+            <ul>
+                <li class="hvr-underline-reveal"><a href="{{ site.baseurl }}/projects/">projects</a></li>
+                <li class="logo"><a class="hvr-ripple-out" href="{{ site.baseurl }}/">T</a></li>
+                <li class="hvr-underline-reveal"><a href="{{ site.baseurl }}/blog/">blog</a></li>
+            </ul>
+        </nav>
+
+        {{ content }}
+
+        {% include scripts.html %}
+    </body>
+</html>

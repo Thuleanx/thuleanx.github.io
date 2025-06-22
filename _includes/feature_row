@@ -7,7 +7,6 @@
 <div class="entries-{{ page.entries_layout | default: 'list' }}">
 
   {% for entry in feature_row %}
-    {% include entry.html %}
   {% endfor %}
 
 </div>

@@ -1,0 +1,16 @@
+---
+layout: default
+title: Games
+---
+
+<ol class="posts clearfix">
+  {%- assign entries = site.games | concat: site.graphics | sort: 'date' | reverse -%}
+  {%- for post in entries -%}
+    <li style="background-image: url({{-post.image.thumbnail-}})" class="post">
+        <a href="{{- site.baseurl -}}{{- post.url -}}">
+            {{- post.title -}}
+        </a>
+    </li>
+  {%- endfor -%}
+</ol>
+

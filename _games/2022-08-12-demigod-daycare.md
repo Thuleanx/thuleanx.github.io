@@ -3,19 +3,24 @@ excerpt: "Collectible 2D Auto-battler"
 image:
   thumbnail: /assets/images/gameCaptures/demigod-daycare/b0.gif
 sidebar:
-  - title: "Links"
     image: "/assets/images/gameCaptures/demigod-daycare/logo.png"
+    tools: Unity, PlasticSCM
+    duration: 3 months
+    team: 6
+    platforms: Android & IOS
     text: >-
-        [App Store](https://apps.apple.com/at/app/demigod-daycare-autobattler/id1630237568?l=en) /
-        [Google Play](https://play.google.com/store/apps/details?id=com.MassDiGi.DemigodDaycare&gl=US&pli=1)
-  - title: "Role"
-    text: "Lead Programmer"
-  - title: "Responsiblities"
-    text: >-
-        Design, prototype, and develop the main game mechanics.
-        Implement enemy AI, turn-based combat system, UI polish, and combat particle effects.
-  - title: "Tools"
-    text: "Unity, PlasticSCM"
+        - Design and prototype main battle mechanics
+
+        - Implement simple, heuristic-based enemy AI
+
+        - Polish with UI Tweening, foliage shaders, and vfx
+    links:
+      - title: "Apple"
+        url: "https://apps.apple.com/at/app/demigod-daycare-autobattler/id1630237568?l=en"
+        icon: "fab fa fa-apple"
+      - title: "Google play"
+        url: "https://play.google.com/store/apps/details?id=com.MassDiGi.DemigodDaycare&gl=US&pli=1"
+        icon: "fab fa fa-android"
 permalink: /games/demigod-daycare/
 no_masthead: true
 

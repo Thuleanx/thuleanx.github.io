@@ -1,0 +1,8 @@
+<figure class="clearfix {{include.class}}">
+    {% assign imgs = include.images | split: "," %}
+    {%- for entry in imgs -%}
+        <a href="{{entry}}">
+            <img src="{{entry}}" loading="lazy"/>
+        </a>
+    {%- endfor -%}
+</figure>

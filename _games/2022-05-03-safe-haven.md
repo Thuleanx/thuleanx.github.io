@@ -2,22 +2,23 @@
 image:
   thumbnail: /assets/images/gameCaptures/safe-haven/climax2.gif
 sidebar:
-  - title: "Links"
-    image: "/assets/images/gameCaptures/safe-haven/proceduralHair.gif"
-    text: >-
-        [Itch.io](https://dylandavis.itch.io/save-haven) /
-        [Repository](https://github.com/Thuleanx/NarrativeGameJam3/tree/main/HorrorNarrative/Assets/All/Programming)
-  - title: "Role"
-    text: "Sole Technical Developer, Artist"
-  - title: "Responsiblities"
     text: >-
         - Design and implement core game mechanics. 
 
-        - Produce all art assets in Aseprite, Krita, and Blender.
+        - Drew pixel art in Aseprite, and produced other art assets in Krita & Blender
 
-        - Chart the beatmap and produce tools for bullet pattern creation.
-  - title: "Tools"
-    text: "Unity, FMOD Studio, Aseprite, Krita"
+        - Chart the beatmap and implement node-based tool for bullet pattern creation.
+    image: "/assets/images/gameCaptures/safe-haven/proceduralHair.gif"
+    links:
+      - title: "Itch"
+        url: "https://dylandavis.itch.io/save-haven"
+        icon: "fab fa-gamepad fa"
+      - title: "Github"
+        url: "https://github.com/Thuleanx/NarrativeGameJam3/tree/main/HorrorNarrative/Assets/All/Programming"
+        icon: "fa fa-github-alt"
+    tools: "Unity, FMOD Studio, Aseprite, Krita"
+    team: 2
+    duration: 18 days
 permalink: /games/safe-haven/
 no_masthead: true
 

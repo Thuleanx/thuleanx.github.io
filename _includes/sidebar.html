@@ -1,31 +1,29 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
-  {% if page.sidebar %}
-    {% for s in page.sidebar %}
-      {% if s.image %}
-        <img src="{{ s.image | relative_url }}"
-             alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-      {% endif %}
-      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-      {% if s.text %}{{ s.text | markdownify }}{% endif %}
-      {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
-      {%- if s.links -%}
-          <div class="social-icons">
-          {%- for footer_link in s.links -%}
-              {%- if footer_link.url contains "://" -%}
-              {%- assign url = footer_link.url -%}
-              {%- else -%}
-              {%- assign url = footer_link.url | relative_url -%}
-              {%- endif -%}
-              <a class="social-icon" href="{{ url }}"><i class="{{ footer_link.icon | default: 'fas fa-link' }} fa-2x" title="{{ footer_link.title }}"></i></a>
-          {%- endfor -%}
-          </div>
-      {%- endif -%}
-    {% endfor %}
-    {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}
+<div class="sidebar">
+    {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+    {% if page.sidebar %}
+        {% if page.sidebar.image %}
+            <img src="{{ page.sidebar.image | relative_url }}"
+            alt="{% if page.sidebar.image_alt %}{{ s.image_alt }}{% endif %}">
+        {% endif %}
+        {%- if page.sidebar.team -%}<b>Team</b>: {{page.sidebar.team}} <br>{%- endif -%}
+        {%- if page.sidebar.tools -%}<b>Tools</b>: {{page.sidebar.tools }} <br>{%- endif -%}
+        {%- if page.sidebar.duration -%}<b>Duration</b>: {{page.sidebar.duration}} <br> {%- endif -%}
+        {%- if page.sidebar.platforms -%}<b>Platforms</b>: {{page.sidebar.platforms}} <br> {%- endif -%}
+        <br>
+        {% if page.sidebar.text %}{{ page.sidebar.text | markdownify }}{% endif %}
+        {%- if page.sidebar.links -%}
+            <div class="ftr-links sidebar-links">
+                {% for footer_link in page.sidebar.links %}
+                    {%- if footer_link.url contains "://" -%}
+                        {%- assign url = footer_link.url -%}
+                    {%- else -%}
+                        {%- assign url = footer_link.url | relative_url -%}
+                    {%- endif -%}
+                    <a href="{{ url }}"><i class="{{ footer_link.icon | default: 'fas fa-link' }} fa-2x" title="{{ footer_link.title }}"></i></a>
+                {% endfor %}
+            </div>
+        {%- endif -%}
     {% endif %}
-  {% endif %}
-  </div>
+</div>
 {% endif %}

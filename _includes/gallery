@@ -12,18 +12,18 @@
   {% elsif gallery.size >= 3 %}
     {% assign gallery_layout = 'third' %}
   {% else %}
-    {% assign gallery_layout = '' %}
+    {% assign gallery_layout = 'one' %}
   {% endif %}
 {% endif %}
 
-<figure class="{{ gallery_layout }} {{ include.class }}">
-  {% for img in gallery %}
+<figure class="{{ gallery_layout }} {{ include.class }} clearfix">
+  {%- for img in gallery -%}
     <a href="{{ img.url | default: img.image_path | relative_url }}"
-        {% if img.title %}title="{{ img.title }}"{% endif %}>
+        {% if img.title %} title="{{ img.title }}" {% endif %}>
             <img src="{{ img.image_path | relative_url }}"
-                alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+                alt="{% if img.alt -%}{{ img.alt }}{% endif %}" loading="lazy">
     </a>
-  {% endfor %}
+  {%- endfor -%}
   {% if include.caption %}
     <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
   {% endif %}

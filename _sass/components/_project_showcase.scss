@@ -1,0 +1,27 @@
+.project-showcase {
+  > * {
+    width: ($content-width) / 2 - 2.1 * $element-margin;
+    float: left;
+    margin: $element-margin;
+  }
+
+  .project-details {
+    padding: 0 1rem;
+    font-size: 16px;
+  }
+
+  margin-bottom: 4em;
+}
+
+@media only screen and (max-width: 840px) {
+  .project-showcase {
+    > * {
+      width: 100%;
+      display: block;
+    }
+
+    .img {
+      max-height: 30%;
+    }
+  }
+}

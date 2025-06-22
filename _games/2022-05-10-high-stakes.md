@@ -3,18 +3,25 @@ layout: post
 image:
   thumbnail: /assets/images/gameCaptures/high-stakes/round01.gif
 sidebar:
-  - title: "Links"
     image: "/assets/images/gameCaptures/high-stakes/title.png"
     text: >-
-        [Itch.io](https://brownrisdgames.itch.io/highstakes) /
-        [Repository](https://github.com/PolyMarsDev/High-Stakes)
-  - title: "Role"
-    text: "Lead Programmer"
-  - title: "Responsiblities"
-    text: >-
-        Develop turn-based movement system, camera panning, UI, audio, and animation implementation.
-  - title: "Tools"
-    text: "Unity, FMOD Studio"
+        - Developed turn-based movement and attack system 
+
+        - Implement camera panning with asymptotic averaging
+        
+        - Implement UI & audio 
+
+        - Animate with tweens
+    team: 20
+    duration: 6 months
+    tools: "Unity, FMOD Studio"
+    links:
+      - title: "Itch"
+        url: "https://brownrisdgames.itch.io/highstakes"
+        icon: "fab fa-gamepad fa"
+      - title: "Github"
+        url: "https://github.com/PolyMarsDev/High-Stakes"
+        icon: "fa fa-github-alt"
 permalink: /games/high-stakes/
 no_masthead: true
 

@@ -1,0 +1,74 @@
+/**
+  * _variables.scss
+  * Contains SCSS variables used in this website's stylesheet.
+  */
+
+// Globals
+$font-stack: 'Anonymous Pro', monospace;
+$font-size: 17px;
+$font-size-mobile: 15px;
+
+$code-font-stack: 'Source Code Pro', monospace;
+
+$bg-color: #09151c;
+$text-color: #ffedf3;
+$main-color: #3e8ab0;
+$main-color-light: #a9cbdb;
+$main-color-dark: #2f5d73;
+$accent-color: #e35f8b;
+$accent-color-light: #f5bccf;
+$accent-color-dark: #943e5b;
+
+// Body
+$body-text-color: $text-color;
+$body-background-color: $bg-color;
+$body-top-border-color: $main-color-dark;
+$body-top-border-width: 5px;
+
+// Links
+$link-color: $accent-color;
+
+// Navigation
+$nav-bottom-border-color: $main-color-dark;
+$nav-bottom-border-width: 1px;
+
+$nav-link-color: $main-color-light;
+$nav-link-padding-y: 0.7rem;
+$nav-link-padding-x: 1.5rem;
+$nav-link-underline-color: $main-color-light;
+
+$nav-icon-color: $bg-color;
+$nav-icon-background-color: $main-color;
+
+// Blog post headings and page titles
+$post-title-color: $main-color;
+$post-date-color: $main-color-light;
+
+// Message box
+$message-color: $bg-color;
+$message-background-color: $accent-color-light;
+
+$content-width: 46rem;
+$content-padding: 1.5rem;
+$sidebar-width: 16rem;
+
+$element-margin: 0.1rem;
+
+$post-color: $text-color;
+$post-background-color: $main-color-dark;
+
+// Pagination
+$pagination-color: $text-color;
+$pagination-background-color: $accent-color;
+
+// Typography
+$heading-color: #3e8ab0;
+$strong-color: $accent-color-light;
+$abbreviation-color: $text-color;
+
+$blockquote-color: $accent-color-light;
+$blockquote-border-color: $main-color-light;
+
+// Table
+$table-background-color: $bg-color;
+$table-border-color : $main-color-dark;

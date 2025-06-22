@@ -4,37 +4,29 @@ title: "Ghost Nirvana"
 image: 
     thumbnail: /assets/images/gameCaptures/ghost-nirvana/many_enemies.gif
 sidebar:
-  - text: >-
-
-        **Jam Project**<br>
-        **Team:** 2 <br>
-        **Tools:** Unity, FMOD<br>
-        **Duration:** 6 weeks<br>
-        **Platforms:** WebGL, Windows, Mac<br>
-
-        <hr>
     image: /assets/images/gameCaptures/ghost-nirvana/title.png
-  - text: >-
-        - **Object pooling system** to handle hundreds of bullets running stably on WebGL
+    tools: Unity, FMOD
+    duration: 6 weeks
+    platforms: WebGL, Windows, Mac
+    text: >-
+        - Object pooling system to handle hundreds of bullets running stably on WebGL
 
-        - **Decoupled combat, UI, and upgrade system** with the MVVM pattern using scriptable objects
+        - Decoupled combat, UI, and upgrade system with the MVVM pattern using scriptable objects
 
         - AI with Finite State Machine
 
         - FMOD Audio mixing and concurrency settings
 
-        - **Online leaderboard system**
+        - Online leaderboard system
 
         - UI tweening
-
-        <hr>
     links:
       - title: "Itch"
         url: "https://thuleanx.itch.io/ghost-nirvana"
         icon: "fab fa-gamepad fa"
       - title: "Github"
         url: "https://github.com/Thuleanx/GhostNirvana"
-        icon: "fab fa-fw fa-github"
+        icon: "fa fa-github-alt"
 permalink: /games/ghost-nirvana/
 no_masthead: true
 
