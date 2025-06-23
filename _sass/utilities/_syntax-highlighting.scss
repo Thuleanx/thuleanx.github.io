@@ -3,18 +3,27 @@
   * Styles for syntax highlighting using Jekyll's configured highlighter.
   */
 
-$code-color: $bg-color;
-$code-comments-color: #09f;
-$code-generic-keywords-color: #069;
-$code-comment-special-color: #999;
+$code-background-color: #2c203d;
+$code-text-color: #daf0d1;
+$code-color-faint: #7a8799;
+$code-color-class: #25a2a8;
+$code-color-string: #5dd477;
+$code-color-number: #e87d43;
+$code-color-type: #cc3184;
+$code-color-func: #4b56eb;
+$code-color-operator: #ffce6b;
+
+$code-comments-color: $code-color-faint;
+$code-generic-keywords-color: $code-color-func;
+$code-comment-special-color: $code-color-faint;
 $code-heading-color: #030;
 $code-variable-color: #033;
 $code-error-color: #a00;
 $code-error-bg-color: #faa;
 $code-generic-error-color: #f00;
-$code-operator-color: #555;
+$code-operator-color: $code-color-operator;
 $code-preprocessor-color: #099;
-$code-number-color: #f60;
+$code-number-color: $code-color-number;
 $code-generic-output-color: #aaa;
 $code-generic-prompt-color: #aaa;
 $code-generic-inserted-color: #cfc;
@@ -23,21 +32,21 @@ $code-generic-inserted-border: #0c0;
 $code-generic-deleted-color: #fcc;
 $code-exception-color: #c00;
 $code-exception-border: #c00;
-$code-string-quote-color: #c30;
-$code-string-symbol-color: #fc3;
-$code-type-color: #078;
-$code-constant-color: #360;
+$code-string-quote-color: $code-color-string;
+$code-string-symbol-color: $code-color-string;
+$code-type-color: $code-color-type;
+$code-constant-color: $code-color-type;
 $code-label-color: #99f;
-$code-function-color: #0cf;
-$code-class-color: #0a8;
-$code-string-color: #d44950;
+$code-function-color: $code-color-func;
+$code-class-color: $code-color-class;
+$code-string-color: $code-color-string;
 $code-name-tag-color: #2f6f9f;
 $code-name-attribute-color: #2f6f9f;
 $code-regex-color: #4f9fcf;
 $code-whitespace-color: #bbb;
 $code-word-color: #000;
 
-.highlight {    color: $code-color; }
+.highlight {    color: $code-text-color; }
 .highlight .hll { background-color: #ffc; }
 .highlight .c { color: $code-comment-special-color; } /* Comment */
 .highlight .err { color: $code-error-color; background-color: $code-error-bg-color } /* Error */

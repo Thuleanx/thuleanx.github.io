@@ -77,12 +77,16 @@ I was in charge of programming, audio, and a portion of the VFX.
 
 ## State Machine (for players and enemies)
 
+
 ![Shadow Enemies](/assets/images/gameCaptures/portal-knight/aitest.gif){:.align-right}
 I developed a simple finite state machine that can be applied to player and AI.
 
 The statemachine is a component that features a list of states with events for entering, exiting, and update, as
 well as the ability for each state to specify a coroutine to run on entrance. 
 The code lives in a separate assembly definition and does not contribute to compilation time.
+
+<p class="clearfix">
+</p>
 
 
 {::options parse_block_html="true" /}
@@ -159,6 +163,7 @@ The following code is for the enemy's special attack that spawns multiple projec
 The state runs a coroutine that waits for the enemy's windup animation, 
 then spawning the projectiles, then waits for a recovery period.
 
+<div class="clearfix"/>
 
 ```c++
 public class ShadowAttackState : State<ShadowEnemy> {
