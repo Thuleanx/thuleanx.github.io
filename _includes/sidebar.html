@@ -4,7 +4,7 @@
     {% if page.sidebar %}
         {% if page.sidebar.image %}
             <img src="{{ page.sidebar.image | relative_url }}"
-            alt="{% if page.sidebar.image_alt %}{{ s.image_alt }}{% endif %}">
+            alt="{% if page.sidebar.image_alt %}{{ s.image_alt }}{% endif %}" loading="lazy">
         {% endif %}
         {%- if page.sidebar.team -%}<b>Team</b>: {{page.sidebar.team}} <br>{%- endif -%}
         {%- if page.sidebar.tools -%}<b>Tools</b>: {{page.sidebar.tools }} <br>{%- endif -%}
