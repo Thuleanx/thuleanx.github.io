@@ -5,4 +5,7 @@
             <img src="{{entry}}" loading="lazy"/>
         </a>
     {%- endfor -%}
+    {%- if include.caption -%}
+        <figcaption>{{- include.caption -}}</figcaption>
+    {%- endif -%}
 </figure>

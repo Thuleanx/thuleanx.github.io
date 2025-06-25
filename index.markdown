@@ -10,7 +10,7 @@ enemy AI, gameplay prototyping, and performance optimization.
 
 </div>
 
-# $ Released Projects
+# Professional Work
 
 <div class="project-showcase clearfix">
 <img src="assets/images/avowedLogo.jpg" loading="lazy"/>
@@ -22,3 +22,5 @@ enemy AI, gameplay prototyping, and performance optimization.
     </ul>
 </div>
 </div>
+
+
