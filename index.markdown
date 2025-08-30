@@ -5,8 +5,12 @@ title: Home
 
 <div class="text-center">
 
-Hello. I'm An, a game programmer. Currently, I'm at Heavy Iron Studios working on 
-enemy AI, gameplay prototyping, and performance optimization.
+Hello. I'm An. 
+Currently, I'm at Heavy Iron Studios working on enemy AI, gameplay prototyping, and performance optimization.
+In my free time, 
+I like to make small jam games, 
+tinker with my graphics engine, 
+and 
 
 </div>
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Liebeskind Normal Mapping"
+title: "Normal Mapping"
 image:
     thumbnail: /assets/images/blogs/normal_mapping/title.png
 ---
@@ -16,12 +16,12 @@ to come.
 
 In graphics, two of the most fundamental techniques for encoding surface details are
 normal mapping and parallax occlusion mapping.
-I went ahead and implemented these first, and even made a presentation & live demo to Heavy Iron folks.
+I went ahead and implemented these first, and even made a presentation & live demo to my company, Heavy Iron Studios.
 
 I heavily referenced LearnOpenGL's [tutorial](https://learnopengl.com/Advanced-Lighting/Normal-Mapping) 
 on this topic, but figured I should make a writeup as a way to internalize my learning.
 
-# Normal Mapping
+# Idea
 
 ![Normal Mapping comparison](/assets/images/blogs/normal_mapping/normal_mapping_comparison.png){:.align-left}
 Back at school, I remember my graphics professor showing us a comparison between using 
@@ -29,7 +29,7 @@ Back at school, I remember my graphics professor showing us a comparison between
 I was impressed at the similarities.
 
 The technique involve encoding surface details in a texture instead of directly on 
-the mesh, and saves a lot of memory and computation by texture interpolation.
+the mesh, and saves a lot of memory by interpolation.
 
 Applying this to a brick material in my engine Liebeskind yields a textured, elevated material
 even though both images below are flat quads.
@@ -243,7 +243,7 @@ This is especially true if the space is scaled unevenly in each dimension.
 
 <br>
 
-    We can derive this formula for the correct normal vector in world space. 
+    We can derive the formula for the correct normal vector in world space. 
 Let $\vec{v}$ be any vector tangent to the surface. 
 By definition of the normal vector $\hat{N}$, we get:
 $$

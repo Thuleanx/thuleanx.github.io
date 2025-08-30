@@ -102,6 +102,15 @@ tbody tr:nth-child(odd) th {
   margin: $element-margin;
 }
 
+.display > * {
+  width: ($content-width) * 0.6 - 2.1 * $element-margin;
+  display: inline-block;
+  margin-left: $element-margin + 0.15 * $content-width;
+  margin-right: $element-margin + 0.15 * $content-width;
+  margin-top: $element-margin;
+  margin-bottom: $element-margin;
+}
+
 .one > * {
   width: ($content-width) - 2.1 * $element-margin;
   display: inline-block;
