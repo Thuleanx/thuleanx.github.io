@@ -10,7 +10,7 @@ Currently, I'm at Heavy Iron Studios working on enemy AI, gameplay prototyping, 
 In my free time, 
 I like to make small jam games, 
 tinker with my graphics engine, 
-and 
+and practice archery.
 
 </div>
 
