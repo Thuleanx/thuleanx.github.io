@@ -6,13 +6,19 @@ image:
   thumbnail: /assets/images/blogs/grass/grassPreview.gif
 ---
 
-For the 2025 TCG and Coreblazer game jam, [Allison Yeh](https://allisonkyeh.com/) 
+For the 2025 TGC and Coreblazer game jam, [Allison Yeh](https://allisonkyeh.com/) 
 and I made a little wholesome game called Secret Florist about 
 a small child collecting flowers, 
-crafting bouquets, 
-and giving it out to townsfolks.
+crafting bouquets, and giving it out to townsfolks.
 Since the gameplay is light, I challenged myself to build an interactive 
 procedural foliage system for the game in the 3 weeks we had for the jam.
+
+{% include image-collection.html class='third' images="
+    /assets/images/blogs/grass/secretFlorist0.gif,
+    /assets/images/blogs/grass/secretFloristTitle.gif,
+    /assets/images/blogs/grass/secretFlorist1.gif"
+    caption = "Secret Florist, our 3 week entry for a jam hosted by That Game Company & Coreblazer"
+%}
 
 What I ended up with was a system of generating grass entirely on the GPU with
 compute shader, renders them in chunks to benefit from frustum and occlusion culling,
@@ -129,17 +135,23 @@ vertices[numBladeSegments * 2] = MakeGeneratedPoint(
 ```
 - Append them to the compute buffer
 
+{% include image-collection.html class='one' images="
+    /assets/images/blogs/grass/generatedMesh.png"
+    caption = "Resulting generated mesh"
+%}
+
 # Vertex shader
 
 Onto the vertex shader. 
 Doing nothing and passing the compute buffer data to the fragment shader yields a grid of uniformly dense grass.
 {% include image-collection.html class='display' images="
     /assets/images/blogs/grass/simpleVertShader.png"
+    caption = "Here, you can clearly see the grid-like pattern"
 %}
 
 ## Random offset
 
-Our first order of business was adding a random offset to the grass blades. 
+Our first order of business is adding a random offset to the grass blades. 
 This already makes the grass looks much more organic. 
 Truthfully, this can be done in the compute shader generation stage as well,
 doing so here is a personal and less performant choice.
@@ -153,6 +165,9 @@ float3 randomOffset =
 randomOffset *= _RandomJitterRadius;
 bladeAnchorWS += randomOffset; // Apply jitter to the anchor for wind
 ```
+> Notice that we use the grass blade's anchor point to sample our noise texture.
+> This is so that the entire blade gets affected the same amount by wind.
+> Otherwise the blades might have weird stretching artefacts.
 
 ## Wind
 
@@ -168,9 +183,8 @@ float2 windUV = TRANSFORM_TEX(bladeAnchorWS.xz, _WindTexture)
 	* 0.05 + _Time.y * _WindFrequency;
 // Sample the wind noise texture and remap it to range between -1 and 1
 float2 windNoise = 
-	float2(
-		SAMPLE_TEXTURE2D_LOD(_WindTexture, sampler_WindTexture, windUV, 0).x, 
-		SAMPLE_TEXTURE2D_LOD(_WindTexture2, sampler_WindTexture2, windUV, 0).x) - 0.5;
+    float2(SAMPLE_TEXTURE2D_LOD(_WindTexture, sampler_WindTexture, windUV, 0).x, 
+        SAMPLE_TEXTURE2D_LOD(_WindTexture2, sampler_WindTexture2, windUV, 0).x) - 0.5;
 // Offset blade points in a vector perpendular to it's normal, but also consistent
 // across blades.
 float3 windOffset = cross(float3(0,1,0), float3(windNoise.x, 0, windNoise.y));
@@ -178,18 +192,15 @@ float3 windOffset = cross(float3(0,1,0), float3(windNoise.x, 0, windNoise.y));
 // Then scale by the amplitude and UV.y, so points near the base of the blade are blown less
 windOffset *= _WindAmplitude * input.uv.y;
 ```
-> Notice that we use the grass blade's anchor point to sample our noise texture.
-> This is so that the entire blade gets affected the same amount by wind.
-> Otherwise the blades might have weird stretching artefacts.
 
 ## Density
 
 Uniformly dense grass is boring.
 Ideally, we want an artist to go in and paint where grass should be.
-However, there's no time to create a robust grass painting tool in a Jam.
+However, there's no time to create a robust grass painting tool in a 3 week jam.
 
-So we did a little hack.
-We can use the Unity terrain drawing tool to alter a terrain, 
+So I did a little hack.
+We can use the Unity terrain drawing tool to paint a terrain, 
 turn off the rendering, and use the heightmap as our density texture.
 Albeit a little scuff, this approach presents no additional runtime cost since 
 we can remove the terrain entirely at runtime and only package the heightmap.
@@ -289,9 +300,7 @@ This compute shader draws how much grass should sway around an agent, in this ca
 This can be dispatched every frame, every few frames, 
 or every time the player moves a significant distance.
 ```c++
-float2 getDesiredDisplacement(
-	float3 pixelOffset, float agentSize) {
-	
+float2 getDesiredDisplacement(float3 pixelOffset, float agentSize) {
     float len = length(pixelOffset.xz);
     float2 dir = len > 0 ? normalize(displacement.xz) : float2(1,0);
 
@@ -318,8 +327,7 @@ float2 get_acceleration(float2 displacement, float2 velocity) {
 }
 
 [numthreads(8,8,1)]
-void CSMain (uint3 id : SV_DispatchThreadID)
-{
+void CSMain (uint3 id : SV_DispatchThreadID) {
     if (id.x >= (uint) _width || id.y >= (uint) _height)
         return;
 
