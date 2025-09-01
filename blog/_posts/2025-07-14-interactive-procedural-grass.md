@@ -2,6 +2,7 @@
 layout: page
 title: "Interactive Procedural Grass"
 categories: graphics shader
+permalink: /graphics/grass/
 image: 
   thumbnail: /assets/images/blogs/grass/grassPreview.gif
 ---

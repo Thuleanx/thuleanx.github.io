@@ -3,6 +3,7 @@ layout: page
 title:  "Cloud Rendering"
 categories: graphics shader
 excerpt: Realtime cloud rendering system in Godot
+permalink: /graphics/cloud/
 no_masthead: true
 image: 
   thumbnail: /assets/images/graphicsCaptures/cloud/pretty_render_big.png

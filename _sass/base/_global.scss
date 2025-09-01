@@ -121,6 +121,10 @@ tbody tr:nth-child(odd) th {
   width: 100%;
 }
 
+.one img {
+  margin: auto;
+}
+
 .third, 
 .one, 
 .half {
@@ -128,5 +132,40 @@ tbody tr:nth-child(odd) th {
     width: 100%;
     font-size: 14px;
     color: $post-date-color;
+  }
+}
+
+.screenshots {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.displayGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 64px;
+  grid-row-gap: 6px;
+
+  > div {
+      position: relative;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .caption {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    background-color: color-mix(in srgb, #3e8ab0, transparent 33%);
+    padding: 0rem .2rem;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align: center;
   }
 }

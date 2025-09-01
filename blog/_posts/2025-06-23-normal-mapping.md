@@ -3,6 +3,7 @@ layout: page
 title: "Normal Mapping"
 image:
     thumbnail: /assets/images/blogs/normal_mapping/title.png
+permalink: /graphics/normal-mapping/
 ---
 
 Late last year, I had the idea of starting another game engine.
