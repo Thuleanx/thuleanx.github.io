@@ -149,8 +149,14 @@ tbody tr:nth-child(odd) th {
   grid-column-gap: 64px;
   grid-row-gap: 6px;
 
+  > a {
+      position: relative;
+      display: block;
+  }
+
   > div {
       position: relative;
+      display: block;
   }
 
   img {
@@ -167,5 +173,6 @@ tbody tr:nth-child(odd) th {
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     text-align: center;
+    color: #ffedf3;
   }
 }
